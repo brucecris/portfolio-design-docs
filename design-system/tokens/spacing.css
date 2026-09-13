@@ -1,0 +1,31 @@
+:root{
+  --space-1:4px;
+  --space-2:8px;
+  --space-3:12px;
+  --space-4:16px;
+  --space-5:20px;
+  --space-6:26px;
+  --space-7:32px;
+  --space-8:40px;
+  --space-9:56px;
+
+  /* Rhythm — fluid pairs used across pages */
+  --gap-section-y:clamp(56px,9vw,110px);
+  --gap-section-y-home:220px;
+  --gap-heading-to-content:clamp(40px,5vw,64px);
+  --gap-heading-to-para:22px;
+  --gap-label-to-list:26px;
+  --gap-section-list-start:clamp(48px,6vw,72px);
+  --gap-block:clamp(32px,4vw,48px);
+  --gap-grid:clamp(24px,3vw,40px);
+
+  --row-padding-y:14px;
+  --row-padding-y-titled:16px;
+  --marker-col:24px;
+  --marker-gap:12px;
+
+  --tile-min-height:210px;
+  --tile-padding:clamp(18px,2vw,26px);
+  --panel-padding:clamp(24px,3.5vw,40px);
+  --card-padding:clamp(20px,2.4vw,28px);
+}

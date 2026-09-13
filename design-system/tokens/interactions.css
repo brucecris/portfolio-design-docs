@@ -1,0 +1,59 @@
+/* Interaction states. Inline styles cannot express :hover or :focus,
+   so every stateful treatment lives here. Load after the token files. */
+
+body{
+  margin:0;
+  background:var(--surface-page);
+  color:var(--text-body);
+  font-family:var(--font-sans);
+  -webkit-font-smoothing:antialiased;
+}
+*{box-sizing:border-box;}
+::selection{background:var(--selection-bg);color:var(--selection-fg);}
+
+a{color:var(--link);text-decoration:none;}
+a:hover{color:var(--link-hover);}
+a:focus-visible{outline:var(--focus-ring-width) solid var(--focus-ring);outline-offset:var(--focus-ring-offset);}
+
+/* Links ─ background moves, text darkens */
+.ds-link{
+  color:var(--link);
+  border-bottom:1px solid var(--link-rule);
+  padding:2px 4px 3px;
+  transition:background var(--ease-hover),color var(--ease-hover),border-color var(--ease-hover);
+}
+.ds-link:hover,.ds-link:focus-visible{
+  background:var(--surface-hover);
+  color:var(--link-hover);
+  border-bottom-color:var(--link-hover);
+}
+.ds-link--secondary{color:var(--link-secondary);border-bottom-color:var(--link-secondary-rule);}
+.ds-link--secondary:hover,.ds-link--secondary:focus-visible{
+  color:var(--link-secondary-hover);
+  border-bottom-color:var(--link-secondary-hover);
+}
+
+/* Nav ─ colour only, no rule */
+.ds-navlink{color:var(--text-secondary);transition:color var(--ease-hover);}
+.ds-navlink:hover{color:var(--text-heading);}
+.ds-navlink[aria-current]{color:var(--text-heading);}
+
+/* Clickable rows and tiles ─ tint the ground, hold the text */
+.ds-row{background:var(--surface-raised);transition:background var(--ease-hover);}
+.ds-row:hover{background:var(--surface-hover);}
+.ds-row__arrow{color:var(--text-accent);align-self:center;justify-self:end;display:inline-block;transition:transform var(--ease-nudge);}
+.ds-row:hover .ds-row__arrow{transform:translateX(var(--nudge-distance));}
+.ds-tile{transition:background var(--ease-hover),box-shadow var(--ease-hover);}
+.ds-tile:hover{background:var(--surface-hover);}
+
+/* Images zoom on the inner element only */
+.ds-zoom{transition:transform .45s cubic-bezier(.2,.7,.3,1);}
+.ds-zoom-host:hover .ds-zoom{transform:scale(var(--image-zoom));}
+
+/* Accordion ─ height animates, glyph swaps, never rotates */
+.ds-accordion__panel{overflow:hidden;height:0;opacity:0;transition:height var(--ease-panel),opacity var(--ease-hover);}
+.ds-accordion__panel[data-open="true"]{opacity:1;}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition-duration:.01ms !important;animation-duration:.01ms !important;}
+}

@@ -1,0 +1,23 @@
+:root{
+  --container-max:1220px;
+  --container-pad:clamp(20px,5vw,72px);
+  --rail-width:clamp(98px,15vw,170px);
+  --rail-gap:clamp(16px,4vw,56px);
+  --header-pad-y:clamp(16px,2.4vw,22px);
+
+  --bento-columns:6;
+  --bento-row-height:clamp(120px,13vw,150px);
+  --bento-rule:1px;
+  --bento-collapse:900px;
+
+  --radius-tag:2px;
+  --radius-dot:50%;
+
+  --ease-hover:.2s ease;
+  --ease-panel:.28s cubic-bezier(.2,.7,.3,1);
+  --focus-ring-width:2px;
+  --focus-ring-offset:2px;
+  --ease-nudge:.22s cubic-bezier(.2,.7,.3,1);
+  --nudge-distance:6px;
+  --image-zoom:1.045;
+}

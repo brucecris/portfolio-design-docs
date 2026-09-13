@@ -1,0 +1,68 @@
+:root{
+  --font-sans:'Standerd','Archivo','Helvetica Neue',system-ui,sans-serif;
+  --font-fallback:'Archivo','Helvetica Neue',system-ui,sans-serif;
+
+  --weight-light:300;
+  --weight-regular:400;
+  --weight-medium:500;
+  --weight-semibold:600;
+  --weight-bold:700;
+
+  /* Page title */
+  --type-title-size:clamp(32px,5.4vw,68px);
+  --type-title-weight:500;
+  --type-title-tracking:-0.038em;
+  --type-title-leading:1.03;
+
+  /* Section heading */
+  --type-section-size:clamp(24px,3vw,38px);
+  --type-section-weight:500;
+  --type-section-tracking:-0.03em;
+  --type-section-leading:1.1;
+
+  /* Phase / sub heading */
+  --type-phase-size:clamp(20px,2.2vw,26px);
+  --type-phase-weight:500;
+  --type-phase-tracking:-0.025em;
+
+  /* Block label */
+  --type-label-size:17px;
+  --type-label-weight:600;
+  --type-label-tracking:-0.015em;
+
+  /* Lead paragraph */
+  --type-lead-size:clamp(17px,1.7vw,20px);
+  --type-lead-leading:1.6;
+
+  /* Body */
+  --type-body-size:16px;
+  --type-body-leading:1.65;
+
+  /* List row */
+  --type-row-size:15px;
+  --type-row-leading:1.55;
+
+  /* Micro / spec */
+  --type-micro-size:13px;
+  --type-micro-leading:1.6;
+
+  /* Section marker and row numerals */
+  --type-marker-size:16px;
+  --type-marker-weight:700;
+  --type-marker-leading:1.6;
+  --type-numeral-size:16px;
+  --type-numeral-weight:700;
+
+  /* Figures on stat tiles, by character count */
+  --type-figure-sm:clamp(22px,2.6vw,34px);
+  --type-figure-md:clamp(28px,3.4vw,46px);
+  --type-figure-lg:clamp(38px,4.6vw,62px);
+  --type-figure-tracking:-0.045em;
+  --type-figure-leading:0.95;
+
+  /* Measures */
+  --measure-heading:26em;
+  --measure-body:34em;
+  --measure-lead:36em;
+  --measure-row:44em;
+}

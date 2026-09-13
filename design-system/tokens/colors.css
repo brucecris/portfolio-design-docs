@@ -1,0 +1,67 @@
+:root{
+  /* ── Ink ───────────────────────────────────────────── */
+  --ink-900:#131313;   /* headings                           */
+  --ink-700:#3A3A38;   /* body                               */
+  --ink-600:#5A5A58;   /* secondary links, nav  6.4:1 on band*/
+  --ink-500:#6E6E6C;   /* muted text                         */
+  --ink-400:#8A8A87;   /* specs, faint labels                */
+
+  /* ── Accent ────────────────────────────────────────── */
+  --accent-800:#8F3E14;  /* link hover / active              */
+  --accent-700:#AB4C1C;  /* links, markers   5.1:1 on band   */
+  --accent-600:#B8541F;  /* display only — fails 4.5:1 as text */
+  --accent-300:#C98A66;  /* link underline   3.2:1           */
+  --accent-200:#E8CBBB;  /* decorative rule only            */
+  --accent-050:#FAF6F2;  /* warm tint (unused since v2)     */
+
+  /* ── Paper ─────────────────────────────────────────── */
+  --paper-000:#FFFFFF;  /* cards, tiles — raised            */
+  --paper-100:#F5F5F5;  /* page ground                      */
+  --paper-150:#F4F3EF;  /* image bed                        */
+  --paper-200:#F1F0EC;  /* panel                            */
+  --paper-300:#EDECE7;  /* header, footer band              */
+  --neutral-200:#ECECEC; /* hover tint — neutral, not warm  */
+
+  /* ── Lines ─────────────────────────────────────────── */
+  --line-200:#EFEEEA;  /* hairline — only legible on white  */
+  --line-300:#E4E3DE;  /* legacy rule (pre-v2)              */
+  --line-400:#D8D7D1;  /* rule — legible on the page ground */
+
+  --green-500:#2E9E5B;
+
+  /* ── Semantic ──────────────────────────────────────── */
+  --text-heading:var(--ink-900);
+  --text-body:var(--ink-700);
+  --text-secondary:var(--ink-600);
+  --text-muted:var(--ink-500);
+  --text-faint:var(--ink-400);
+  --text-accent:var(--accent-700);
+  --text-inverse:var(--paper-000);
+
+  --surface-page:var(--paper-100);
+  --surface-raised:var(--paper-000);
+  --surface-band:var(--paper-100);
+  --surface-header:var(--paper-300);
+  --surface-footer:var(--paper-300);
+  --surface-panel:var(--paper-200);
+  --surface-image-bed:var(--paper-150);
+  --surface-card:var(--paper-000);
+  --surface-hover:var(--neutral-200);
+
+  --border-rule:var(--line-400);
+  --border-hairline:var(--line-400);
+  --border-hairline-on-white:var(--line-200);
+  --border-accent-rule:var(--accent-300);
+
+  --link:var(--accent-700);
+  --link-hover:var(--accent-800);
+  --link-rule:var(--accent-300);
+  --link-secondary:var(--ink-600);
+  --link-secondary-rule:var(--ink-400);
+  --link-secondary-hover:var(--ink-900);
+  --focus-ring:var(--ink-900);
+
+  --status-available:var(--green-500);
+  --selection-bg:var(--accent-700);
+  --selection-fg:var(--paper-000);
+}

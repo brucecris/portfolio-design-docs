@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>I'm Bruce. — design system example</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header style="background:var(--surface-header)">
+    <div style="max-width:var(--container-max);margin:0 auto;padding:var(--header-pad-y) var(--container-pad);display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px">
+      <a href="#" style="font-size:16px;font-weight:600;letter-spacing:-0.01em;color:var(--text-heading)">I&rsquo;m Bruce.</a>
+      <nav style="display:flex;flex-wrap:wrap;gap:clamp(12px,1.8vw,26px);font-size:13px;font-weight:500;letter-spacing:0.01em">
+        <a class="ds-navlink" href="#" aria-current="page">Home</a>
+        <a class="ds-navlink" href="#">Work</a>
+        <a class="ds-navlink" href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main style="max-width:var(--container-max);margin:0 auto;padding:0 var(--container-pad)">
+    <section style="padding:var(--gap-section-y) 0;display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+      <div style="font-size:var(--type-marker-size);font-weight:var(--type-marker-weight);color:var(--text-accent);line-height:var(--type-marker-leading)"><span style="font-weight:400">01</span><br />Example</div>
+      <div>
+        <h1 style="margin:0;max-width:var(--measure-heading);font-size:var(--type-title-size);font-weight:var(--type-title-weight);letter-spacing:var(--type-title-tracking);line-height:var(--type-title-leading);color:var(--text-heading)">Tokens only.</h1>
+        <p style="margin:var(--gap-heading-to-para) 0 0;max-width:var(--measure-lead);font-size:var(--type-lead-size);line-height:var(--type-lead-leading);color:var(--text-body)">Nothing on this page is a hard-coded value. Change a token and it follows.</p>
+        <p style="margin:24px 0 0"><a class="ds-link" href="#">Primary link</a> &nbsp; <a class="ds-link ds-link--secondary" href="#">Secondary link</a></p>
+      </div>
+    </section>
+
+    <section style="border-top:1px solid var(--border-rule);padding:var(--gap-section-y) 0;display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+      <div style="font-size:var(--type-marker-size);font-weight:var(--type-marker-weight);color:var(--text-accent);line-height:var(--type-marker-leading)"><span style="font-weight:400">02</span><br />Rows</div>
+      <div style="max-width:var(--measure-row)">
+        <a class="ds-row" href="#" style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center;padding:18px 14px;border-top:1px solid var(--border-rule);color:var(--text-heading)">
+          <span style="font-size:var(--type-row-size);line-height:var(--type-row-leading)">Hover tints the ground, the arrow nudges</span>
+          <span class="ds-row__arrow">&rarr;</span>
+        </a>
+        <a class="ds-row" href="#" style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center;padding:18px 14px;border-top:1px solid var(--border-rule);border-bottom:1px solid var(--border-rule);color:var(--text-heading)">
+          <span style="font-size:var(--type-row-size);line-height:var(--type-row-leading)">The title holds at ink</span>
+          <span class="ds-row__arrow">&rarr;</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer style="border-top:1px solid var(--border-rule)">
+    <div style="max-width:var(--container-max);margin:0 auto;padding:clamp(32px,5vw,56px) var(--container-pad);display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:24px">
+      <span style="font-size:13px;font-weight:500;color:var(--text-heading)">I&rsquo;m Bruce.</span>
+      <span style="font-size:12px;letter-spacing:0.02em;color:var(--text-muted)">Design system v2</span>
+    </div>
+  </footer>
+</body>
+</html>
