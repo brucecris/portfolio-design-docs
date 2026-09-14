@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="design-system/styles.css" />
+<style>
+body{overflow-x:clip;}
+</style>
+</helmet>
+
+<div style="font-family:var(--font-sans);color:var(--ink-900);background:var(--paper-100);-webkit-font-smoothing:antialiased">
+
+  <header style="background:var(--paper-300);border-bottom:1px solid var(--line-400)">
+    <div style="max-width:var(--container-max);margin:0 auto;padding:var(--header-pad-y) var(--container-pad);display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px">
+      <a href="Home.dc.html" style="font-size:16px;font-weight:600;letter-spacing:-0.01em;color:var(--ink-900)">I’m Bruce.</a>
+      <nav style="display:flex;flex-wrap:wrap;align-items:center;gap:clamp(12px,1.8vw,26px);font-size:13px;font-weight:500;letter-spacing:0.01em">
+        <a href="Home.dc.html" style="color:var(--ink-600);transition:color .2s ease" style-hover="color:var(--ink-900)">Home</a>
+        <a href="Design System Overview.dc.html" style="color:var(--ink-600);transition:color .2s ease" style-hover="color:var(--ink-900)">Design system</a>
+        <span style="color:var(--ink-900)">Sections</span>
+      </nav>
+    </div>
+  </header>
+
+  <div style="max-width:var(--container-max);margin:0 auto;padding:0 var(--container-pad)">
+
+    <section style="padding:var(--gap-section-y) 0 clamp(40px,6vw,72px);display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+      <div></div>
+      <div>
+        <h1 style="margin:0;max-width:var(--measure-heading);font-size:var(--type-title-size);font-weight:500;letter-spacing:-0.038em;line-height:1.03">Sections.</h1>
+        <p style="margin:22px 0 0;max-width:var(--measure-lead);font-size:var(--type-lead-size);line-height:1.6;color:var(--ink-700)">Every block used across the pages, at real width, with the marker rail in place. Each one names its source: a component in <span style="color:var(--ink-900)">components/</span>, or a composition assembled from several. Copy a block, paste it into a page, replace the copy.</p>
+        <div style="margin-top:var(--gap-heading-to-content);display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px var(--gap-grid);max-width:60em;font-size:13px">
+          <a href="#site-header">Site header</a>
+          <a href="#marker">Section marker</a>
+          <a href="#core">Tag, link, dot</a>
+          <a href="#page-hero">Page hero</a>
+          <a href="#hero-status">Page hero, with status</a>
+          <a href="#hero-case">Case-study hero</a>
+          <a href="#fullbleed">Full-bleed band</a>
+          <a href="#statement">Statement and paragraph</a>
+          <a href="#arrow-list">Arrow list</a>
+          <a href="#ordered">Numbered steps</a>
+          <a href="#facts">Fact list</a>
+          <a href="#accordion">Accordion</a>
+          <a href="#phases">Phase blocks</a>
+          <a href="#timeline">Timeline rows</a>
+          <a href="#meta-rows">Title and meta rows</a>
+          <a href="#work-rows">Work rows</a>
+          <a href="#archive">Dated archive rows</a>
+          <a href="#featured">Featured card</a>
+          <a href="#stats">Stat tiles</a>
+          <a href="#bento">Capability bento</a>
+          <a href="#quadrant">Decision quadrant</a>
+          <a href="#deliverable">Deliverable card</a>
+          <a href="#lightbox">Lightbox</a>
+          <a href="#award">Award callout</a>
+          <a href="#panel">Panel</a>
+          <a href="#contact-details">Contact details</a>
+          <a href="#site-footer">Site footer</a>
+        </div>
+      </div>
+    </section>
+
+    <div id="site-header" style="border-top:1px solid var(--line-400);padding:20px 0 clamp(56px,7vw,88px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px">
+        <span style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Site header</span>
+        <span style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">SiteHeader.jsx · sticky, surface-header · baseline aligned · nav 13px/500, 0.01em</span>
+      </div>
+      <div style="margin-top:24px;background:var(--paper-300);border:1px solid var(--line-400);padding:var(--header-pad-y) clamp(20px,3vw,40px);display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:clamp(12px,2vw,24px)">
+        <span style="font-size:16px;font-weight:600;letter-spacing:-0.01em">I’m Bruce.</span>
+        <span style="display:flex;flex-wrap:wrap;gap:clamp(12px,1.8vw,26px);font-size:13px;font-weight:500;letter-spacing:0.01em;color:var(--ink-500)">
+          <span style="color:var(--ink-900)">Home</span><span>Why Bruce</span><span>What I Do</span><span>Work</span><span>Career</span><span>Contact</span><span>Better Questions Blog</span>
+        </span>
+      </div>
+    </div>
+
+    <div id="marker" style="border-top:1px solid var(--line-400);padding:20px 0 clamp(56px,7vw,88px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px">
+        <span style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Section marker</span>
+        <span style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">SectionMarker.jsx · 16px/700 accent, 1.6 · number 400 on its own line</span>
+      </div>
+      <div style="margin-top:24px;display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+        <div style="font-size:16px;font-weight:700;color:var(--text-accent);line-height:1.6"><span style="font-weight:400">00</span><br>Marker</div>
+        <div style="font-size:15px;line-height:1.55;color:var(--ink-500)">The rail holds the marker and nothing else. Two digits, then a plain noun on the next line.</div>
+      </div>
+    </div>
+
+    <div id="core" style="border-top:1px solid var(--line-400);padding:20px 0 clamp(56px,7vw,88px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px">
+        <span style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Tag, link, dot</span>
+        <span style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">Tag.jsx 13px/500, 8×13, 2px radius · TextLink.jsx 14px/500, accent-700 #AB4C1C at 5.1:1 and ink-600 #5A5A58 at 6.4:1 · hover tints and darkens text and rule to ink · focus adds a 2px ink outline · AvailabilityDot.jsx 8px</span>
+      </div>
+      <div style="margin-top:24px;display:flex;flex-wrap:wrap;align-items:center;gap:clamp(24px,4vw,48px)">
+        <span style="display:flex;flex-wrap:wrap;gap:8px">
+          <span style="display:inline-block;border:1px solid var(--line-400);border-radius:var(--radius-tag);padding:8px 13px;font-size:13px;font-weight:500;letter-spacing:-0.005em;line-height:1.3;color:var(--ink-700)">Service design</span>
+          <span style="display:inline-block;border:1px solid var(--line-400);border-radius:var(--radius-tag);padding:8px 13px;font-size:13px;font-weight:500;letter-spacing:-0.005em;line-height:1.3;color:var(--ink-700)">Research</span>
+        </span>
+        <a href="#core" style="font-size:14px;font-weight:500;color:var(--accent-700);border-bottom:1px solid var(--accent-300);padding:2px 4px 3px;transition:background .2s ease,color .2s ease,border-color .2s ease" style-hover="background:var(--neutral-200);color:var(--accent-800);border-bottom-color:var(--accent-800)" style-focus="background:var(--neutral-200);color:var(--accent-800);border-bottom-color:var(--accent-800);outline:2px solid var(--ink-900);outline-offset:2px">Primary link</a>
+        <a href="#core" style="font-size:14px;font-weight:500;color:var(--ink-600);border-bottom:1px solid var(--ink-400);padding:2px 4px 3px;transition:background .2s ease,color .2s ease,border-color .2s ease" style-hover="background:var(--neutral-200);color:var(--ink-900);border-bottom-color:var(--ink-900)" style-focus="background:var(--neutral-200);color:var(--ink-900);border-bottom-color:var(--ink-900);outline:2px solid var(--ink-900);outline-offset:2px">Secondary link</a>
+        <span style="display:inline-flex;align-items:center;gap:9px;font-size:13px;font-weight:600;letter-spacing:-0.005em"><span style="width:8px;height:8px;border-radius:50%;background:var(--green-500);display:inline-block"></span>Booking projects</span>
+      </div>
+    </div>
+
+    <div id="page-hero" style="border-top:1px solid var(--line-400);padding:20px 0 clamp(56px,7vw,88px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px">
+        <span style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Page hero</span>
+        <span style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">composition · empty rail · title 26em, lead 36em</span>
+      </div>
+      <div style="margin-top:24px;display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+        <div></div>
+        <div>
+          <h2 style="margin:0;max-width:var(--measure-heading);font-size:clamp(32px,5.4vw,58px);font-weight:500;letter-spacing:-0.038em;line-height:1.03">Page title.</h2>
+          <p style="margin:22px 0 0;max-width:var(--measure-lead);font-size:var(--type-lead-size);line-height:1.6;color:var(--ink-700)">Lead paragraph of two or three sentences. Replace this copy.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="hero-status" style="border-top:1px solid var(--line-400);padding:20px 0 clamp(56px,7vw,88px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px">
+        <span style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Page hero, with status and logo strip</span>
+        <span style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">composition · AvailabilityDot in rail · client logos 34px, object-fit contain</span>
+      </div>
+      <div style="margin-top:24px;display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+        <div><span style="display:inline-flex;align-items:center;gap:9px;font-size:13px;font-weight:600"><span style="width:8px;height:8px;border-radius:50%;background:var(--green-500);display:inline-block"></span>Booking projects</span></div>
+        <div>
+          <h2 style="margin:0;max-width:var(--measure-heading);font-size:clamp(32px,5.4vw,58px);font-weight:500;letter-spacing:-0.038em;line-height:1.03">One-line statement about the work.</h2>
+          <p style="margin:22px 0 0;max-width:var(--measure-lead);font-size:var(--type-lead-size);line-height:1.6;color:var(--ink-700)">Lead paragraph. Replace this copy.</p>
+          <div style="margin-top:var(--gap-heading-to-content);padding-top:26px;border-top:1px solid var(--line-400);display:flex;flex-wrap:wrap;align-items:center;gap:clamp(24px,4vw,40px)">
+            <span style="font-size:13px;color:var(--ink-400)">Selected clients</span>
+            <span style="display:flex;flex-wrap:wrap;align-items:center;gap:clamp(20px,3vw,32px)">
+              <span style="height:34px;min-width:96px;border:1px dashed var(--line-400);display:grid;place-items:center;font-size:11px;color:var(--ink-400)">Logo</span>
+              <span style="height:34px;min-width:96px;border:1px dashed var(--line-400);display:grid;place-items:center;font-size:11px;color:var(--ink-400)">Logo</span>
+              <span style="height:34px;min-width:96px;border:1px dashed var(--line-400);display:grid;place-items:center;font-size:11px;color:var(--ink-400)">Logo</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="hero-case" style="border-top:1px solid var(--line-400);padding:20px 0 clamp(56px,7vw,88px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px">
+        <span style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Case-study hero</span>
+        <span style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">composition · logo, title, standfirst, fact list · award callout sits alongside</span>
+      </div>
+      <div style="margin-top:24px;display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+        <div style="font-size:13px;color:var(--ink-500)">← Work</div>
+        <div>
+          <div style="height:34px;width:120px;border:1px dashed var(--line-400);display:grid;place-items:center;font-size:11px;color:var(--ink-400)">Client logo</div>
+          <h2 style="margin:26px 0 0;max-width:var(--measure-heading);font-size:clamp(32px,5.4vw,58px);font-weight:500;letter-spacing:-0.038em;line-height:1.03">Case study title as a statement.</h2>
+          <p style="margin:22px 0 0;max-width:var(--measure-lead);font-size:var(--type-lead-size);line-height:1.6;color:var(--ink-700)">Standfirst naming the client, the problem and the result. Replace this copy.</p>
+          <div style="margin-top:var(--gap-heading-to-content);display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:0 var(--gap-grid)">
+            <div style="padding-bottom:16px;border-bottom:1px solid var(--line-400)"><div style="font-size:17px;font-weight:600;letter-spacing:-0.015em;line-height:1.3">Client</div><div style="margin-top:8px;font-size:15px;line-height:1.45;color:var(--ink-500)">Client name</div></div>
+            <div style="padding-bottom:16px;border-bottom:1px solid var(--line-400)"><div style="font-size:17px;font-weight:600;letter-spacing:-0.015em;line-height:1.3">My role</div><div style="margin-top:8px;font-size:15px;line-height:1.45;color:var(--ink-500)">Role title</div></div>
+            <div style="padding-bottom:16px;border-bottom:1px solid var(--line-400)"><div style="font-size:17px;font-weight:600;letter-spacing:-0.015em;line-height:1.3">Duration</div><div style="margin-top:8px;font-size:15px;line-height:1.45;color:var(--ink-500)">00 months</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="fullbleed" style="border-top:1px solid var(--line-400);padding:20px 0 clamp(56px,7vw,88px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px">
+        <span style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Full-bleed band</span>
+        <span style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">composition · 100vw via margin-left calc(50% - 50vw) · clamp(300px, 58vh, 660px)</span>
+      </div>
+      <div style="margin-top:24px;background:var(--paper-150);border:1px dashed var(--line-400);height:clamp(200px,26vw,340px);display:grid;place-items:center;font-size:13px;color:var(--ink-400)">Full-bleed image — breaks the container on the page</div>
+    </div>
+
+    <div id="statement" style="border-top:1px solid var(--line-400);padding:20px 0 clamp(56px,7vw,88px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px">
+        <span style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Statement and paragraph</span>
+        <span style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">composition · the default section · heading 26em, body 34em</span>
+      </div>
+      <div style="margin-top:24px;display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+        <div style="font-size:16px;font-weight:700;color:var(--text-accent);line-height:1.6"><span style="font-weight:400">01</span><br>Marker</div>
+        <div>
+          <h3 style="margin:0;max-width:var(--measure-heading);font-size:var(--type-section-size);font-weight:500;letter-spacing:-0.03em;line-height:1.1">Section heading as a statement.</h3>
+          <p style="margin:22px 0 0;max-width:var(--measure-body);font-size:16px;line-height:1.65;color:var(--ink-700)">One or two paragraphs of body copy. Replace this copy.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="arrow-list" style="border-top:1px solid var(--line-400);padding:20px 0 clamp(56px,7vw,88px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px">
+        <span style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Arrow list</span>
+        <span style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">ListRow.jsx · 20px marker column, 12px gap · rule on the bottom edge · 44em</span>
+      </div>
+      <div style="margin-top:24px;max-width:var(--measure-row);overflow:hidden">
+        <div style="margin-bottom:-1px">
+          <div style="display:grid;grid-template-columns:20px minmax(0,1fr);gap:12px;align-items:start;padding:14px 0;border-bottom:1px solid var(--line-400);font-size:15px;line-height:1.55;color:var(--ink-700);text-wrap:pretty"><span style="color:var(--text-accent)">→</span><span>Item stated in one line.</span></div>
+          <div style="display:grid;grid-template-columns:20px minmax(0,1fr);gap:12px;align-items:start;padding:14px 0;border-bottom:1px solid var(--line-400);font-size:15px;line-height:1.55;color:var(--ink-700);text-wrap:pretty"><span style="color:var(--text-accent)">→</span><span>Item stated in one line.</span></div>
+          <div style="display:grid;grid-template-columns:20px minmax(0,1fr);gap:12px;align-items:start;padding:14px 0;border-bottom:1px solid var(--line-400);font-size:15px;line-height:1.55;color:var(--ink-700);text-wrap:pretty"><span style="color:var(--text-accent)">→</span><span>Item stated in one line.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="ordered" style="border-top:1px solid var(--line-400);padding:20px 0 clamp(56px,7vw,88px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px">
+        <span style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Numbered steps</span>
+        <span style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">OrderedRow.jsx · numeral 16px/700 accent · title 16px/600 · note 15px muted</span>
+      </div>
+      <div style="margin-top:24px;max-width:var(--measure-row);overflow:hidden">
+        <div style="margin-bottom:-1px">
+          <div style="display:grid;grid-template-columns:24px minmax(0,1fr);gap:12px;align-items:start;padding:16px 0;border-bottom:1px solid var(--line-400)">
+            <span style="font-size:16px;font-weight:700;color:var(--text-accent);font-variant-numeric:tabular-nums">01</span>
+            <div><h4 style="margin:0;font-size:16px;font-weight:600;letter-spacing:-0.01em;line-height:1.35;text-wrap:pretty">Step title</h4><p style="margin:8px 0 0;font-size:15px;line-height:1.6;color:var(--ink-500);text-wrap:pretty">One line on what happens in this step.</p></div>
+          </div>
+          <div style="display:grid;grid-template-columns:24px minmax(0,1fr);gap:12px;align-items:start;padding:16px 0;border-bottom:1px solid var(--line-400)">
+            <span style="font-size:16px;font-weight:700;color:var(--text-accent);font-variant-numeric:tabular-nums">02</span>
+            <div><h4 style="margin:0;font-size:16px;font-weight:600;letter-spacing:-0.01em;line-height:1.35;text-wrap:pretty">Step title</h4><p style="margin:8px 0 0;font-size:15px;line-height:1.6;color:var(--ink-500);text-wrap:pretty">One line on what happens in this step.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="facts" style="border-top:1px solid var(--line-400);padding:20px 0 clamp(56px,7vw,88px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px">
+        <span style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Fact list</span>
+        <span style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">FactItem.jsx · label 17px/600 ink over value 15px muted · rule on the bottom edge</span>
+      </div>
+      <div style="margin-top:24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:0 var(--gap-grid);max-width:60em">
+        <div style="padding-bottom:16px;border-bottom:1px solid var(--line-400)"><div style="font-size:17px;font-weight:600;letter-spacing:-0.015em;line-height:1.3">Label</div><div style="margin-top:8px;font-size:15px;line-height:1.45;letter-spacing:-0.005em;color:var(--ink-500)">Value</div></div>
+        <div style="padding-bottom:16px;border-bottom:1px solid var(--line-400)"><div style="font-size:17px;font-weight:600;letter-spacing:-0.015em;line-height:1.3">Label</div><div style="margin-top:8px;font-size:15px;line-height:1.45;letter-spacing:-0.005em;color:var(--ink-500)">Value</div></div>
+        <div style="padding-bottom:16px;border-bottom:1px solid var(--line-400)"><div style="font-size:17px;font-weight:600;letter-spacing:-0.015em;line-height:1.3">Label</div><div style="margin-top:8px;font-size:15px;line-height:1.45;letter-spacing:-0.005em;color:var(--ink-500)">Value</div></div>
+      </div>
+    </div>
+
+    <div id="accordion" style="border-top:1px solid var(--line-400);padding:20px 0 clamp(56px,7vw,88px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px">
+        <span style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Accordion</span>
+        <span style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">plus and minus swapped, never rotated · panel opens over .28s ease · rule per row · text holds at ink</span>
+      </div>
+      <div style="margin-top:24px;max-width:var(--measure-row)">
+        <div onClick="{{ toggle0 }}" style="border-top:1px solid var(--line-400);padding:16px 0;display:flex;align-items:baseline;justify-content:space-between;gap:24px;cursor:pointer">
+          <span style="font-size:16px;font-weight:600;letter-spacing:-0.01em">Question or label goes here</span>
+          <span style="{{ sign0 }}">{{ glyph0 }}</span>
+        </div>
+        <div style="{{ panel0 }}">
+          <div ref="{{ inner0 }}">
+            <p style="margin:0;padding:4px 0 20px;max-width:var(--measure-body);font-size:15px;line-height:1.6;color:var(--ink-500)">Answer copy. One or two sentences. Replace this copy.</p>
+          </div>
+        </div>
+        <div onClick="{{ toggle1 }}" style="border-top:1px solid var(--line-400);border-bottom:1px solid var(--line-400);padding:16px 0;display:flex;align-items:baseline;justify-content:space-between;gap:24px;cursor:pointer">
+          <span style="font-size:16px;font-weight:600;letter-spacing:-0.01em">Question or label goes here</span>
+          <span style="{{ sign1 }}">{{ glyph1 }}</span>
+        </div>
+        <div style="{{ panel1 }}">
+          <div ref="{{ inner1 }}">
+            <p style="margin:0;padding:20px 0 0;max-width:var(--measure-body);font-size:15px;line-height:1.6;color:var(--ink-500)">Answer copy. One or two sentences. Replace this copy.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="phases" style="border-top:1px solid var(--line-400);padding:20px 0 clamp(56px,7vw,88px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px">
+        <span style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Phase blocks</span>
+        <span style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">composition · numeral 16px/700 accent, phase heading, duration right · body plus output tags</span>
+      </div>
+      <div style="margin-top:24px;display:grid;gap:var(--gap-block);max-width:60em">
+        <div style="border-top:1px solid var(--line-400);padding-top:20px">
+          <div style="display:flex;align-items:baseline;gap:12px"><span style="font-size:16px;font-weight:700;color:var(--text-accent);font-variant-numeric:tabular-nums">01</span><span style="font-size:var(--type-phase-size);font-weight:500;letter-spacing:-0.025em">Phase title</span><span style="font-size:13px;color:var(--ink-400);margin-left:auto;flex:none">Weeks 0–0</span></div>
+          <p style="margin:14px 0 0;max-width:var(--measure-body);font-size:16px;line-height:1.65;color:var(--ink-700)">What happened, with whom, and what it produced.</p>
+          <div style="margin-top:14px;display:flex;flex-wrap:wrap;gap:8px"><span style="border:1px solid var(--line-400);border-radius:var(--radius-tag);padding:8px 13px;font-size:13px;font-weight:500;color:var(--ink-700)">Output</span><span style="border:1px solid var(--line-400);border-radius:var(--radius-tag);padding:8px 13px;font-size:13px;font-weight:500;color:var(--ink-700)">Output</span></div>
+        </div>
+        <div style="border-top:1px solid var(--line-400);border-bottom:1px solid var(--line-400);padding:20px 0">
+          <div style="display:flex;align-items:baseline;gap:12px"><span style="font-size:16px;font-weight:700;color:var(--text-accent);font-variant-numeric:tabular-nums">02</span><span style="font-size:var(--type-phase-size);font-weight:500;letter-spacing:-0.025em">Phase title</span><span style="font-size:13px;color:var(--ink-400);margin-left:auto;flex:none">Weeks 0–0</span></div>
+          <p style="margin:14px 0 0;max-width:var(--measure-body);font-size:16px;line-height:1.65;color:var(--ink-700)">What happened, with whom, and what it produced.</p>
+          <div style="margin-top:14px;display:flex;flex-wrap:wrap;gap:8px"><span style="border:1px solid var(--line-400);border-radius:var(--radius-tag);padding:8px 13px;font-size:13px;font-weight:500;color:var(--ink-700)">Output</span><span style="border:1px solid var(--line-400);border-radius:var(--radius-tag);padding:8px 13px;font-size:13px;font-weight:500;color:var(--ink-700)">Output</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="timeline" style="border-top:1px solid var(--line-400);padding:20px 0 clamp(56px,7vw,88px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px">
+        <span style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Timeline rows</span>
+        <span style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">composition · date column minmax(96px, 140px) · role, organisation, note</span>
+      </div>
+      <div style="margin-top:24px;max-width:60em">
+        <div style="border-top:1px solid var(--line-400);padding:20px 0;display:grid;grid-template-columns:minmax(96px,140px) minmax(0,1fr);gap:clamp(16px,3vw,40px)">
+          <div style="font-size:13px;color:var(--ink-400);font-variant-numeric:tabular-nums">0000 – 0000</div>
+          <div><div style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Role title</div><div style="margin-top:4px;font-size:15px;line-height:1.55;color:var(--ink-500)">Organisation · city</div><p style="margin:10px 0 0;max-width:var(--measure-body);font-size:15px;line-height:1.55;color:var(--ink-700)">One or two lines on the remit.</p></div>
+        </div>
+        <div style="border-top:1px solid var(--line-400);border-bottom:1px solid var(--line-400);padding:20px 0;display:grid;grid-template-columns:minmax(96px,140px) minmax(0,1fr);gap:clamp(16px,3vw,40px)">
+          <div style="font-size:13px;color:var(--ink-400);font-variant-numeric:tabular-nums">0000 – 0000</div>
+          <div><div style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Role title</div><div style="margin-top:4px;font-size:15px;line-height:1.55;color:var(--ink-500)">Organisation · city</div><p style="margin:10px 0 0;max-width:var(--measure-body);font-size:15px;line-height:1.55;color:var(--ink-700)">One or two lines on the remit.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="meta-rows" style="border-top:1px solid var(--line-400);padding:20px 0 clamp(56px,7vw,88px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px">
+        <span style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Title and meta rows</span>
+        <span style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">composition · title left, spec right · 44em · indexes and other engagements</span>
+      </div>
+      <div style="margin-top:24px;max-width:var(--measure-row)">
+        <div style="border-top:1px solid var(--line-400);padding:16px 0;display:flex;align-items:baseline;justify-content:space-between;gap:24px"><span style="font-size:15px;line-height:1.55">Title goes here</span><span style="font-size:13px;color:var(--ink-400);font-variant-numeric:tabular-nums;flex:none">Meta · year</span></div>
+        <div style="border-top:1px solid var(--line-400);border-bottom:1px solid var(--line-400);padding:16px 0;display:flex;align-items:baseline;justify-content:space-between;gap:24px"><span style="font-size:15px;line-height:1.55">Title goes here</span><span style="font-size:13px;color:var(--ink-400);font-variant-numeric:tabular-nums;flex:none">Meta · year</span></div>
+      </div>
+    </div>
+
+    <div id="work-rows" style="border-top:1px solid var(--line-400);padding:20px 0 clamp(56px,7vw,88px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px">
+        <span style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Work rows</span>
+        <span style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">WorkRow.jsx · number 16px/700 accent, title, arrow · 22px rows · tints on hover, arrow nudges 6px</span>
+      </div>
+      <div style="margin-top:24px;max-width:60em">
+        <a href="#work-rows" onMouseEnter="{{ enterW0 }}" onMouseLeave="{{ leaveRow }}" style="color:var(--ink-900);display:grid;grid-template-columns:var(--workrow-index-col) minmax(0,1fr) 28px;gap:clamp(14px,2.4vw,32px);align-items:baseline;padding:22px clamp(10px,1.4vw,16px);border-top:1px solid var(--line-400);transition:background .2s ease" style-hover="background:var(--neutral-200);color:var(--ink-900)">
+          <span style="font-size:16px;font-weight:700;color:var(--text-accent);line-height:1.6">01</span>
+          <span style="font-size:clamp(18px,2.1vw,26px);font-weight:500;letter-spacing:-0.025em;line-height:1.2">Project title goes here</span>
+          <span style="{{ arrowW0 }}">→</span>
+        </a>
+        <a href="#work-rows" onMouseEnter="{{ enterW1 }}" onMouseLeave="{{ leaveRow }}" style="color:var(--ink-900);display:grid;grid-template-columns:var(--workrow-index-col) minmax(0,1fr) 28px;gap:clamp(14px,2.4vw,32px);align-items:baseline;padding:22px clamp(10px,1.4vw,16px);border-top:1px solid var(--line-400);border-bottom:1px solid var(--line-400);transition:background .2s ease" style-hover="background:var(--neutral-200);color:var(--ink-900)">
+          <span style="font-size:16px;font-weight:700;color:var(--text-accent);line-height:1.6">02</span>
+          <span style="font-size:clamp(18px,2.1vw,26px);font-weight:500;letter-spacing:-0.025em;line-height:1.2">Project title goes here</span>
+          <span style="{{ arrowW1 }}">→</span>
+        </a>
+      </div>
+    </div>
+
+    <div id="archive" style="border-top:1px solid var(--line-400);padding:20px 0 clamp(56px,7vw,88px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px">
+        <span style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Dated archive rows</span>
+        <span style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">composition · date, title and standfirst, arrow · Writing index</span>
+      </div>
+      <div style="margin-top:24px;max-width:60em">
+        <a href="#archive" onMouseEnter="{{ enterB0 }}" onMouseLeave="{{ leaveRow }}" style="color:var(--ink-900);display:grid;grid-template-columns:minmax(96px,140px) minmax(0,1fr) auto;align-items:baseline;gap:clamp(16px,3vw,40px);border-top:1px solid var(--line-400);padding:18px clamp(10px,1.4vw,16px);transition:background .2s ease" style-hover="background:var(--neutral-200);color:var(--ink-900)">
+          <span style="font-size:13px;color:var(--ink-400);font-variant-numeric:tabular-nums">Month year</span>
+          <span style="min-width:0"><span style="display:block;font-size:16px;font-weight:600;letter-spacing:-0.01em">Post title goes here</span><span style="display:block;margin-top:6px;font-size:15px;line-height:1.6;color:var(--ink-500)">One line of standfirst.</span></span>
+          <span style="{{ arrowB0 }}">→</span>
+        </a>
+        <a href="#archive" onMouseEnter="{{ enterB1 }}" onMouseLeave="{{ leaveRow }}" style="color:var(--ink-900);display:grid;grid-template-columns:minmax(96px,140px) minmax(0,1fr) auto;align-items:baseline;gap:clamp(16px,3vw,40px);border-top:1px solid var(--line-400);border-bottom:1px solid var(--line-400);padding:18px clamp(10px,1.4vw,16px);transition:background .2s ease" style-hover="background:var(--neutral-200);color:var(--ink-900)">
+          <span style="font-size:13px;color:var(--ink-400);font-variant-numeric:tabular-nums">Month year</span>
+          <span style="min-width:0"><span style="display:block;font-size:16px;font-weight:600;letter-spacing:-0.01em">Post title goes here</span><span style="display:block;margin-top:6px;font-size:15px;line-height:1.6;color:var(--ink-500)">One line of standfirst.</span></span>
+          <span style="{{ arrowB1 }}">→</span>
+        </a>
+      </div>
+    </div>
+
+    <div id="featured" style="border-top:1px solid var(--line-400);padding:20px 0 clamp(56px,7vw,88px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px">
+        <span style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Featured card</span>
+        <span style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">composition · white with the card shadow · date, section-size title, standfirst, link</span>
+      </div>
+      <div style="margin-top:24px;background:var(--paper-000);padding:var(--panel-padding);box-shadow:var(--shadow-card);transition:background .2s ease" style-hover="background:var(--neutral-200)">
+        <div style="font-size:13px;color:var(--ink-400);font-variant-numeric:tabular-nums">Month year · reading time</div>
+        <div style="margin-top:16px;max-width:var(--measure-heading);font-size:var(--type-section-size);font-weight:500;letter-spacing:-0.03em;line-height:1.1">Featured title goes here.</div>
+        <p style="margin:18px 0 0;max-width:var(--measure-body);font-size:16px;line-height:1.65;color:var(--ink-700)">Two sentences of standfirst copy. Replace this copy.</p>
+        <div style="margin-top:24px;font-size:14px;font-weight:500;color:var(--text-accent)">Read the post →</div>
+      </div>
+    </div>
+
+    <div id="stats" style="border-top:1px solid var(--line-400);padding:20px 0 clamp(56px,7vw,88px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px">
+        <span style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Stat tiles</span>
+        <span style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">StatTile.jsx · transparent with inset rules, earns white and the shadow on hover · figure 400, size steps down by character count</span>
+      </div>
+      <div style="margin-top:24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr))">
+        <div style="display:flex;flex-direction:column;gap:10px;min-height:var(--tile-min-height);padding:var(--tile-padding);box-shadow:inset -1px 0 0 var(--line-400),inset 0 -1px 0 var(--line-400);transition:background .2s ease,box-shadow .2s ease" style-hover="background:var(--paper-000);box-shadow:var(--shadow-card)">
+          <span style="font-weight:400;letter-spacing:-0.045em;line-height:0.95;font-variant-numeric:tabular-nums;font-size:var(--type-figure-lg)">00%</span>
+          <span style="font-size:clamp(14px,1.4vw,17px);letter-spacing:-0.015em;line-height:1.3;color:var(--ink-700);text-wrap:pretty">Label for the figure, one line of context</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px;min-height:var(--tile-min-height);padding:var(--tile-padding);box-shadow:inset -1px 0 0 var(--line-400),inset 0 -1px 0 var(--line-400);transition:background .2s ease,box-shadow .2s ease" style-hover="background:var(--paper-000);box-shadow:var(--shadow-card)">
+          <span style="font-weight:400;letter-spacing:-0.045em;line-height:0.95;font-variant-numeric:tabular-nums;font-size:var(--type-figure-md)">00 units</span>
+          <span style="font-size:clamp(14px,1.4vw,17px);letter-spacing:-0.015em;line-height:1.3;color:var(--ink-700);text-wrap:pretty">Label for the figure, one line of context</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px;min-height:var(--tile-min-height);padding:var(--tile-padding);box-shadow:inset -1px 0 0 var(--line-400),inset 0 -1px 0 var(--line-400);transition:background .2s ease,box-shadow .2s ease" style-hover="background:var(--paper-000);box-shadow:var(--shadow-card)">
+          <span style="font-weight:400;letter-spacing:-0.045em;line-height:0.95;font-variant-numeric:tabular-nums;font-size:var(--type-figure-sm)">0.0 million</span>
+          <span style="font-size:clamp(14px,1.4vw,17px);letter-spacing:-0.015em;line-height:1.3;color:var(--ink-700);text-wrap:pretty">Label for the figure, one line of context</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="bento" style="border-top:1px solid var(--line-400);padding:20px 0 clamp(56px,7vw,88px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px">
+        <span style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Capability bento</span>
+        <span style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">BentoTile.jsx · six columns, span 2 by default · icon top, title clamp(17px, 1.8vw, 21px)/500, body 14px muted</span>
+      </div>
+      <div style="margin-top:24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:var(--line-400);border:1px solid var(--line-400)">
+        <div style="background:var(--paper-000);display:flex;flex-direction:column;gap:18px;padding:clamp(18px,2.2vw,26px);min-height:var(--bento-row-height);transition:background .2s ease" style-hover="background:var(--neutral-200)">
+          <img src="assets/plate-colors.svg" alt="" style="width:28px;height:28px;object-fit:contain;flex:0 0 auto">
+          <div style="margin-top:auto"><h4 style="margin:0;font-size:clamp(17px,1.8vw,21px);font-weight:500;letter-spacing:-0.025em;line-height:1.15">Capability</h4><p style="margin:10px 0 0;font-size:14px;line-height:1.55;color:var(--ink-500)">One line on what it covers.</p></div>
+        </div>
+        <div style="background:var(--paper-000);display:flex;flex-direction:column;gap:18px;padding:clamp(18px,2.2vw,26px);min-height:var(--bento-row-height);transition:background .2s ease" style-hover="background:var(--neutral-200)">
+          <img src="assets/plate-code.svg" alt="" style="width:28px;height:28px;object-fit:contain;flex:0 0 auto">
+          <div style="margin-top:auto"><h4 style="margin:0;font-size:clamp(17px,1.8vw,21px);font-weight:500;letter-spacing:-0.025em;line-height:1.15">Capability</h4><p style="margin:10px 0 0;font-size:14px;line-height:1.55;color:var(--ink-500)">One line on what it covers.</p></div>
+        </div>
+        <div style="background:var(--paper-000);display:flex;flex-direction:column;gap:18px;padding:clamp(18px,2.2vw,26px);min-height:var(--bento-row-height);transition:background .2s ease" style-hover="background:var(--neutral-200)">
+          <span style="width:28px;height:28px;border:1px dashed var(--line-400);display:block;flex:0 0 auto"></span>
+          <div style="margin-top:auto"><h4 style="margin:0;font-size:clamp(17px,1.8vw,21px);font-weight:500;letter-spacing:-0.025em;line-height:1.15">Capability</h4><p style="margin:10px 0 0;font-size:14px;line-height:1.55;color:var(--ink-500)">Empty 28px icon slot.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="quadrant" style="border-top:1px solid var(--line-400);padding:20px 0 clamp(56px,7vw,88px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px">
+        <span style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Decision quadrant</span>
+        <span style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">composition · bento tiles carrying a numeral · title plus the trade-off</span>
+      </div>
+      <div style="margin-top:24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:var(--line-400);border:1px solid var(--line-400)">
+        <div style="background:var(--paper-000);display:flex;flex-direction:column;gap:18px;padding:clamp(18px,2.2vw,26px);min-height:180px">
+          <div style="font-size:clamp(17px,1.8vw,21px);font-weight:600;color:var(--accent-700);letter-spacing:-0.02em;font-variant-numeric:tabular-nums">01</div>
+          <div style="margin-top:auto"><h4 style="margin:0;font-size:clamp(17px,1.8vw,21px);font-weight:500;letter-spacing:-0.025em;line-height:1.15">Decision title</h4><p style="margin:10px 0 0;font-size:14px;line-height:1.55;color:var(--ink-500)">What was chosen, and what was given up.</p></div>
+        </div>
+        <div style="background:var(--paper-000);display:flex;flex-direction:column;gap:18px;padding:clamp(18px,2.2vw,26px);min-height:180px">
+          <div style="font-size:clamp(17px,1.8vw,21px);font-weight:600;color:var(--accent-700);letter-spacing:-0.02em;font-variant-numeric:tabular-nums">02</div>
+          <div style="margin-top:auto"><h4 style="margin:0;font-size:clamp(17px,1.8vw,21px);font-weight:500;letter-spacing:-0.025em;line-height:1.15">Decision title</h4><p style="margin:10px 0 0;font-size:14px;line-height:1.55;color:var(--ink-500)">What was chosen, and what was given up.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="deliverable" style="border-top:1px solid var(--line-400);padding:20px 0 clamp(56px,7vw,88px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px">
+        <span style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Deliverable card</span>
+        <span style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">DeliverableCard.jsx · image bed with the card shadow, zooms 1.045 on hover · View pill opens the lightbox · type in accent caps with a nudging arrow</span>
+      </div>
+      <div style="margin-top:24px;max-width:46em">
+        <div style="position:relative;overflow:hidden;background:var(--paper-150);box-shadow:var(--shadow-card)">
+          <div style="height:200px;display:grid;place-items:center;font-size:13px;color:var(--ink-400);border:1px dashed var(--line-400);transition:transform .45s cubic-bezier(.2,.7,.3,1)" style-hover="transform:scale(1.045)">Cover image</div>
+          <span onClick="{{ openBox }}" style="position:absolute;right:10px;bottom:10px;z-index:2;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--paper-000);background:var(--ink-900);border-radius:100px;padding:8px 14px;cursor:pointer">View 3</span>
+        </div>
+        <div style="padding-top:16px;display:flex;align-items:flex-start;justify-content:space-between;gap:20px">
+          <div style="min-width:0">
+            <h3 style="margin:0;font-size:17px;font-weight:600;letter-spacing:-0.015em;line-height:1.25">Deliverable name</h3>
+            <div style="margin-top:8px;display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-accent)">Artifact type <span style="{{ arrowD }}">→</span></div>
+          </div>
+          <span style="width:120px;max-height:28px;flex:0 0 auto;border:1px dashed var(--line-400);display:grid;place-items:center;font-size:11px;color:var(--ink-400)">Logo</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="lightbox" style="border-top:1px solid var(--line-400);padding:20px 0 clamp(56px,7vw,88px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px">
+        <span style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Lightbox</span>
+        <span style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">Lightbox.jsx · fixed, rgba(15,15,14,.94) · title and caps meta, pill controls, index over total · Escape and arrow keys</span>
+      </div>
+      <div style="margin-top:24px">
+        <span onClick="{{ openBox }}" style="display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--paper-000);background:var(--ink-900);border-radius:100px;padding:10px 16px;cursor:pointer">Open the lightbox</span>
+      </div>
+    </div>
+
+    <div id="award" style="border-top:1px solid var(--line-400);padding:20px 0 clamp(56px,7vw,88px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px">
+        <span style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Award callout</span>
+        <span style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">AwardCallout.jsx · square, max 300px, surface-panel · badge 72px · eyebrow 13px/700 accent</span>
+      </div>
+      <div style="margin-top:24px;display:flex;flex-wrap:wrap;gap:var(--gap-grid)">
+        <div style="background:var(--paper-200);aspect-ratio:1 / 1;width:100%;max-width:300px;display:flex;flex-direction:column;justify-content:space-between;padding:var(--card-padding)">
+          <span style="width:72px;height:72px;border:1px dashed var(--line-400);display:grid;place-items:center;font-size:11px;color:var(--ink-400)">Badge</span>
+          <div>
+            <div style="font-size:13px;font-weight:700;color:var(--text-accent);line-height:1.6">Award winner</div>
+            <div style="margin-top:6px;font-size:clamp(19px,2vw,23px);font-weight:500;letter-spacing:-0.025em;line-height:1.2;text-wrap:pretty">Award name goes here</div>
+            <div style="margin-top:8px;font-size:13px;line-height:1.5;color:var(--ink-500)">Awarding body, year</div>
+          </div>
+        </div>
+        <div style="background:var(--paper-200);aspect-ratio:1 / 1;width:100%;max-width:300px;display:flex;flex-direction:column;justify-content:space-between;padding:var(--card-padding)">
+          <span style="width:72px;height:72px;border:1px dashed var(--line-400);display:grid;place-items:center;font-size:11px;color:var(--ink-400)">Badge</span>
+          <div>
+            <div style="font-size:13px;font-weight:700;color:var(--text-accent);line-height:1.6">Award winner</div>
+            <div style="margin-top:6px;font-size:clamp(19px,2vw,23px);font-weight:500;letter-spacing:-0.025em;line-height:1.2;text-wrap:pretty">Award name goes here</div>
+            <div style="margin-top:8px;font-size:13px;line-height:1.5;color:var(--ink-500)">Awarding body, year</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="panel" style="border-top:1px solid var(--line-400);padding:20px 0 clamp(56px,7vw,88px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px">
+        <span style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Panel</span>
+        <span style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">Panel.jsx · surface-panel, panel-padding, flat and square · title 17px/600, subtitle 14px muted, content 30px below</span>
+      </div>
+      <div style="margin-top:24px;background:var(--paper-200);padding:var(--panel-padding)">
+        <div style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Panel title</div>
+        <div style="margin-top:6px;font-size:14px;color:var(--ink-500)">Subtitle line</div>
+        <div style="margin-top:30px">
+          <p style="margin:0;max-width:var(--measure-body);font-size:16px;line-height:1.65;color:var(--ink-700)">Panel content. A closing statement, a form, or a fact list. Replace this copy.</p>
+          <div style="margin-top:24px"><a href="#panel" style="font-size:14px;font-weight:500;color:var(--accent-700);border-bottom:1px solid var(--accent-300);padding:2px 4px 3px;transition:background .2s ease,color .2s ease,border-color .2s ease" style-hover="background:var(--neutral-200);color:var(--accent-800);border-bottom-color:var(--accent-800)" style-focus="background:var(--neutral-200);color:var(--accent-800);border-bottom-color:var(--accent-800);outline:2px solid var(--ink-900);outline-offset:2px">Get in touch</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact-details" style="border-top:1px solid var(--line-400);padding:20px 0 clamp(56px,7vw,88px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px">
+        <span style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Contact details</span>
+        <span style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">composition · email at section size over a fact list</span>
+      </div>
+      <div style="margin-top:24px">
+        <a href="mailto:" style="font-size:var(--type-section-size);font-weight:500;letter-spacing:-0.03em;color:var(--accent-700);border-bottom:1px solid var(--accent-300);padding:0 4px 4px;transition:background .2s ease,color .2s ease,border-color .2s ease" style-hover="background:var(--neutral-200);color:var(--accent-800);border-bottom-color:var(--accent-800)" style-focus="background:var(--neutral-200);color:var(--accent-800);border-bottom-color:var(--accent-800);outline:2px solid var(--ink-900);outline-offset:2px">name@domain.com</a>
+        <div style="margin-top:var(--gap-block);display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:0 var(--gap-grid);max-width:60em">
+          <div style="padding-bottom:16px;border-bottom:1px solid var(--line-400)"><div style="font-size:17px;font-weight:600;letter-spacing:-0.015em;line-height:1.3">Based in</div><div style="margin-top:8px;font-size:15px;line-height:1.45;color:var(--ink-500)">City, region</div></div>
+          <div style="padding-bottom:16px;border-bottom:1px solid var(--line-400)"><div style="font-size:17px;font-weight:600;letter-spacing:-0.015em;line-height:1.3">Time zone</div><div style="margin-top:8px;font-size:15px;line-height:1.45;color:var(--ink-500)">Zone, offset</div></div>
+          <div style="padding-bottom:16px;border-bottom:1px solid var(--line-400)"><div style="font-size:17px;font-weight:600;letter-spacing:-0.015em;line-height:1.3">Elsewhere</div><div style="margin-top:8px;font-size:15px;line-height:1.45;color:var(--ink-500)">LinkedIn</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="site-footer" style="border-top:1px solid var(--line-400);padding:20px 0 clamp(56px,7vw,88px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px">
+        <span style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Site footer</span>
+        <span style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">SiteFooter.jsx · a rule and two lines, no band · wordmark 13px/500, note 12px muted</span>
+      </div>
+      <div style="margin-top:24px;border-top:1px solid var(--line-400);padding:clamp(32px,5vw,56px) 0;display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:24px">
+        <span style="font-size:13px;font-weight:500">I’m Bruce.</span>
+        <span style="font-size:12px;letter-spacing:0.02em;color:var(--ink-500)">One line of footer copy.</span>
+      </div>
+    </div>
+
+  </div>
+
+  <footer style="border-top:1px solid var(--line-400);background:var(--paper-300)">
+    <div style="max-width:var(--container-max);margin:0 auto;padding:clamp(40px,6vw,72px) var(--container-pad);display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:24px">
+      <a href="Home.dc.html" style="font-size:16px;font-weight:600;letter-spacing:-0.01em;color:var(--ink-900)">I’m Bruce.</a>
+      <span style="font-size:13px;line-height:1.6;color:var(--ink-500)">Section library, reconciled against components/. Foundations live in the <a href="Design System Overview.dc.html">design system</a>.</span>
+    </div>
+  </footer>
+
+  <sc-if value="{{ boxOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="position:fixed;inset:0;z-index:90;background:rgba(15,15,14,0.94);display:flex;flex-direction:column">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:clamp(18px,3vw,32px) clamp(20px,4vw,48px)">
+        <div>
+          <div style="font-size:15px;font-weight:600;letter-spacing:-0.01em;color:var(--paper-000)">Deliverable name</div>
+          <div style="margin-top:6px;font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent-on-dark)">Artifact type</div>
+        </div>
+        <span onClick="{{ closeBox }}" style="font-size:12px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--paper-000);border:1px solid rgba(255,255,255,0.32);border-radius:100px;padding:9px 18px;cursor:pointer">Close</span>
+      </div>
+      <div style="flex:1;min-height:0;padding:0 clamp(20px,4vw,48px);display:flex;align-items:center;justify-content:center;font-size:13px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.5)">Artifact image</div>
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:20px;padding:clamp(18px,3vw,32px) clamp(20px,4vw,48px)">
+        <span onClick="{{ prevShot }}" style="font-size:13px;font-weight:500;color:var(--paper-000);border:1px solid rgba(255,255,255,0.32);border-radius:100px;padding:10px 22px;cursor:pointer">Previous</span>
+        <span style="font-size:12px;font-weight:500;letter-spacing:0.1em;color:rgba(255,255,255,0.62);font-variant-numeric:tabular-nums">{{ shotLabel }}</span>
+        <span onClick="{{ nextShot }}" style="font-size:13px;font-weight:500;color:var(--accent-on-dark);border:1px solid rgba(255,255,255,0.32);border-radius:100px;padding:10px 22px;cursor:pointer">Next</span>
+      </div>
+    </div>
+  </sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{}">
+class Component extends DCLogic {
+  state = { hover: null, open0: true, open1: false, boxOpen: false, shot: 0 };
+  arrow(k) {
+    return { color: 'var(--text-accent)', fontSize: '16px', display: 'inline-block', justifySelf: 'end', alignSelf: 'center', transition: 'transform .22s cubic-bezier(.2,.7,.3,1)', transform: this.state.hover === k ? 'translateX(6px)' : 'none' };
+  }
+  set(k) { return () => this.setState({ hover: k }); }
+  measure(el, key) {
+    if (!el) return;
+    this['_' + key] = el;
+    const h = el.offsetHeight;
+    if (h && this.state[key] !== h) this.setState({ [key]: h });
+  }
+  panel(open, h) {
+    return {
+      display: 'block',
+      overflow: 'hidden',
+      height: open ? (h ? h + 'px' : 'auto') : '0px',
+      opacity: open ? 1 : 0,
+      transition: 'height .28s cubic-bezier(.2,.7,.3,1), opacity .2s ease'
+    };
+  }
+  sign(open) {
+    return {
+      fontSize: '16px',
+      color: 'var(--text-accent)',
+      flex: 'none',
+      display: 'inline-block',
+      transition: 'transform .28s cubic-bezier(.2,.7,.3,1)',
+      transform: open ? 'translateY(1px)' : 'none'
+    };
+  }
+  componentDidMount() {
+    this.onKey = (e) => {
+      if (!this.state.boxOpen) return;
+      if (e.key === 'Escape') this.setState({ boxOpen: false });
+      if (e.key === 'ArrowRight') this.setState((s) => ({ shot: (s.shot + 1) % 3 }));
+      if (e.key === 'ArrowLeft') this.setState((s) => ({ shot: (s.shot + 2) % 3 }));
+    };
+    window.addEventListener('keydown', this.onKey);
+  }
+  componentWillUnmount() { window.removeEventListener('keydown', this.onKey); }
+  renderVals() {
+    return {
+      enterW0: this.set('w0'), enterW1: this.set('w1'), enterB0: this.set('b0'), enterB1: this.set('b1'),
+      leaveRow: () => this.setState({ hover: null }),
+      arrowW0: this.arrow('w0'), arrowW1: this.arrow('w1'), arrowB0: this.arrow('b0'), arrowB1: this.arrow('b1'),
+      arrowD: { display: 'inline-block', fontSize: '1.25em', lineHeight: 1, letterSpacing: 0, transition: 'transform .22s cubic-bezier(.2,.7,.3,1)' },
+      panel0: this.panel(this.state.open0, this.state.h0),
+      panel1: this.panel(this.state.open1, this.state.h1),
+      inner0: (el) => this.measure(el, 'h0'),
+      inner1: (el) => this.measure(el, 'h1'),
+      sign0: this.sign(this.state.open0),
+      sign1: this.sign(this.state.open1),
+      glyph0: this.state.open0 ? '\u2212' : '+',
+      glyph1: this.state.open1 ? '\u2212' : '+',
+      toggle0: () => this.setState((s) => ({ open0: !s.open0 })),
+      toggle1: () => this.setState((s) => ({ open1: !s.open1 })),
+      boxOpen: this.state.boxOpen,
+      openBox: () => this.setState({ boxOpen: true, shot: 0 }),
+      closeBox: () => this.setState({ boxOpen: false }),
+      prevShot: () => this.setState((s) => ({ shot: (s.shot + 2) % 3 })),
+      nextShot: () => this.setState((s) => ({ shot: (s.shot + 1) % 3 })),
+      shotLabel: (this.state.shot + 1) + ' / 3'
+    };
+  }
+}
+</script>
+</body>
+</html>

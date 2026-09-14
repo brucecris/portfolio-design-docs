@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="design-system/styles.css" />
+<script src="./image-slot.js"></script>
+<style>
+body{overflow-x:clip;}
+</style>
+</helmet>
+
+<div style="font-family:var(--font-sans);color:var(--ink-900);background:var(--surface-page);-webkit-font-smoothing:antialiased">
+
+  <header data-screen-label="Home" style="position:sticky;top:0;z-index:60;background:var(--surface-header);border-bottom:1px solid var(--border-rule)">
+    <div style="max-width:var(--container-max);margin:0 auto;padding:var(--header-pad-y) var(--container-pad);display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px">
+      <a href="Home.dc.html" style="font-size:16px;font-weight:600;letter-spacing:-0.01em;color:var(--ink-900)">Bruce Criscuolo</a>
+      <nav style="display:flex;flex-wrap:wrap;align-items:baseline;gap:clamp(12px,1.8vw,26px);font-size:13px;font-weight:500;letter-spacing:0.01em">
+        <a class="ds-navlink" href="Work.dc.html">Work</a>
+        <a class="ds-navlink" href="About.dc.html">About</a>
+        <a class="ds-navlink" href="Resume.dc.html">Resume</a>
+        <a class="ds-navlink" href="Contact.dc.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div style="max-width:var(--container-max);margin:0 auto;padding:0 var(--container-pad)">
+
+    <section style="padding:var(--gap-section-y) 0 var(--gap-block);display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+      <div style="font-size:13px">
+        <span style="display:inline-flex;align-items:center;gap:9px;font-weight:600;letter-spacing:-0.005em;color:var(--ink-700)"><span style="width:8px;height:8px;border-radius:50%;background:var(--status-available);display:inline-block"></span>Open to conversations</span>
+      </div>
+      <div>
+        <div style="font-size:13px;font-weight:500;letter-spacing:0.02em;color:var(--ink-500);text-wrap:pretty">Principal Experience Designer &nbsp;&middot;&nbsp; Design Leader &nbsp;&middot;&nbsp; Sensemaker</div>
+        <h1 style="margin:20px 0 0;max-width:var(--measure-heading);font-size:var(--type-title-size);font-weight:500;letter-spacing:-0.038em;line-height:1.03;text-wrap:pretty">I make complex things understandable.</h1>
+        <p style="margin:var(--gap-heading-to-para) 0 0;max-width:var(--measure-lead);font-size:var(--type-lead-size);line-height:1.6;color:var(--ink-700);text-wrap:pretty">I turn complicated organizations, services, and emerging technologies into experiences people can understand and businesses can act on. Twenty-five years across strategy, research, product, service design, and AI. Still hands-on.</p>
+        <div style="margin-top:var(--gap-heading-to-content);display:flex;flex-wrap:wrap;align-items:baseline;gap:clamp(20px,3vw,32px)">
+          <a class="ds-link" href="Work.dc.html" style="font-size:var(--type-cta-size);font-weight:var(--type-cta-weight);letter-spacing:var(--type-cta-tracking)">View selected work</a>
+          <a class="ds-link ds-link--secondary" href="Resume.dc.html" style="font-size:15px;font-weight:500">Read my resume</a>
+        </div>
+      </div>
+    </section>
+
+    <section style="border-top:1px solid var(--border-rule);padding:var(--gap-section-y) 0;display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+      <div style="font-size:var(--type-marker-size);font-weight:var(--type-marker-weight);color:var(--text-accent);line-height:var(--type-marker-leading)"><span style="font-weight:400">02</span><br />Proof</div>
+      <div>
+        <div style="overflow:hidden"><div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin:0 -1px -1px 0;">
+          <div class="ds-tile" style="display:flex;flex-direction:column;gap:10px;justify-content:flex-end;min-height:clamp(130px,15vw,170px);padding:var(--tile-padding);box-shadow:inset -1px 0 0 var(--border-rule),inset 0 -1px 0 var(--border-rule)">
+            <span style="font-weight:400;letter-spacing:-0.045em;line-height:0.95;font-variant-numeric:tabular-nums;font-size:var(--type-figure-lg)">25+</span>
+            <span style="font-size:clamp(14px,1.4vw,17px);letter-spacing:-0.015em;line-height:1.3;color:var(--ink-700);text-wrap:pretty">Years in practice</span>
+          </div>
+          <div class="ds-tile" style="display:flex;flex-direction:column;gap:10px;justify-content:flex-end;min-height:clamp(130px,15vw,170px);padding:var(--tile-padding);box-shadow:inset -1px 0 0 var(--border-rule),inset 0 -1px 0 var(--border-rule)">
+            <span style="font-weight:400;letter-spacing:-0.045em;line-height:0.95;font-variant-numeric:tabular-nums;font-size:var(--type-figure-lg)">51</span>
+            <span style="font-size:clamp(14px,1.4vw,17px);letter-spacing:-0.015em;line-height:1.3;color:var(--ink-700);text-wrap:pretty">Brands</span>
+          </div>
+          <div class="ds-tile" style="display:flex;flex-direction:column;gap:10px;justify-content:flex-end;min-height:clamp(130px,15vw,170px);padding:var(--tile-padding);box-shadow:inset -1px 0 0 var(--border-rule),inset 0 -1px 0 var(--border-rule)">
+            <span style="font-weight:400;letter-spacing:-0.045em;line-height:0.95;font-variant-numeric:tabular-nums;font-size:var(--type-figure-lg)">1,000+</span>
+            <span style="font-size:clamp(14px,1.4vw,17px);letter-spacing:-0.015em;line-height:1.3;color:var(--ink-700);text-wrap:pretty">Customer interviews</span>
+          </div>
+          <div class="ds-tile" style="display:flex;flex-direction:column;gap:10px;justify-content:flex-end;min-height:clamp(130px,15vw,170px);padding:var(--tile-padding);box-shadow:inset -1px 0 0 var(--border-rule),inset 0 -1px 0 var(--border-rule)">
+            <span style="font-weight:400;letter-spacing:-0.045em;line-height:0.95;font-variant-numeric:tabular-nums;font-size:var(--type-figure-lg)">14</span>
+            <span style="font-size:clamp(14px,1.4vw,17px);letter-spacing:-0.015em;line-height:1.3;color:var(--ink-700);text-wrap:pretty">Industries</span>
+          </div>
+        </div>
+        </div>
+        <p style="margin:20px 0 0;max-width:var(--measure-body);font-size:13px;line-height:1.6;color:var(--ink-400)">Awards and client outcomes stay attached to the projects that earned them.</p>
+      </div>
+    </section>
+
+    <section style="border-top:1px solid var(--border-rule);padding:var(--gap-section-y) 0;display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+      <div style="font-size:var(--type-marker-size);font-weight:var(--type-marker-weight);color:var(--text-accent);line-height:var(--type-marker-leading)"><span style="font-weight:400">03</span><br />Selected work</div>
+      <div>
+        <h2 style="margin:0;max-width:var(--measure-heading);font-size:var(--type-section-size);font-weight:500;letter-spacing:-0.03em;line-height:1.1;text-wrap:pretty">Three different forms of value.</h2>
+        <a class="ds-row" href="PSEG.dc.html" style="display:block;margin-top:var(--gap-heading-to-content);color:var(--ink-900);border:1px solid var(--border-rule)">
+          <span style="display:block;height:clamp(240px,32vw,420px);border-bottom:1px solid var(--border-rule)">
+            <image-slot id="home-pseg" shape="rect" fit="cover" placeholder="PSEG featured image"></image-slot>
+          </span>
+          <span style="display:grid;grid-template-columns:minmax(0,1fr) 28px;gap:clamp(14px,2.4vw,32px);align-items:end;padding:var(--card-padding)">
+            <span style="display:block;min-width:0">
+              <span style="display:flex;flex-wrap:wrap;align-items:center;gap:16px">
+                <span style="height:30px;min-width:96px;border:1px dashed var(--border-rule);display:grid;place-items:center;font-size:11px;color:var(--ink-400)">PSE&amp;G logo</span>
+                <span style="font-size:13px;font-weight:500;letter-spacing:0.02em;color:var(--ink-500)">Enterprise CX</span>
+              </span>
+              <span style="display:block;margin-top:18px;font-size:clamp(22px,2.6vw,32px);font-weight:500;letter-spacing:-0.03em;line-height:1.15;text-wrap:pretty">PSEG</span>
+              <span style="display:block;margin-top:8px;max-width:var(--measure-heading);font-size:clamp(17px,1.8vw,21px);font-weight:500;letter-spacing:-0.02em;line-height:1.3;color:var(--ink-700);text-wrap:pretty">Turning customer understanding into a system for change</span>
+              <span style="display:block;margin-top:14px;max-width:var(--measure-body);font-size:15px;line-height:1.6;color:var(--ink-500);text-wrap:pretty">Enterprise CX, behavioral models, IA, content strategy, and a reusable delivery system.</span>
+              <span style="display:flex;flex-wrap:wrap;gap:8px;margin-top:20px">
+                <span style="border:1px solid var(--border-rule);border-radius:var(--radius-tag);padding:5px 10px;font-size:13px;color:var(--ink-700)">Research</span>
+                <span style="border:1px solid var(--border-rule);border-radius:var(--radius-tag);padding:5px 10px;font-size:13px;color:var(--ink-700)">Information architecture</span>
+                <span style="border:1px solid var(--border-rule);border-radius:var(--radius-tag);padding:5px 10px;font-size:13px;color:var(--ink-700)">Content strategy</span>
+              </span>
+            </span>
+            <span class="ds-row__arrow">&rarr;</span>
+          </span>
+        </a>
+        <div style="margin-top:var(--gap-grid);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:var(--gap-grid);align-items:stretch">
+          <a class="ds-row" href="HomeServe.dc.html" style="display:flex;flex-direction:column;color:var(--ink-900);border:1px solid var(--border-rule)">
+            <span style="display:block;height:170px;border-bottom:1px solid var(--border-rule)">
+              <image-slot id="home-homeserve" shape="rect" fit="cover" placeholder="HomeServe image"></image-slot>
+            </span>
+            <span style="display:flex;flex-direction:column;flex:1;gap:12px;padding:var(--card-padding)">
+              <span style="display:flex;align-items:center;gap:12px">
+                <span style="height:26px;min-width:84px;border:1px dashed var(--border-rule);display:grid;place-items:center;font-size:11px;color:var(--ink-400)">HomeServe logo</span>
+              </span>
+              <span style="display:block;font-size:clamp(19px,2vw,23px);font-weight:500;letter-spacing:-0.025em;line-height:1.2;text-wrap:pretty">HomeServe</span>
+              <span style="display:block;font-size:16px;font-weight:500;letter-spacing:-0.015em;line-height:1.35;color:var(--ink-700);text-wrap:pretty">Making service transformation financially actionable</span>
+              <span style="display:block;font-size:15px;line-height:1.55;color:var(--ink-500);text-wrap:pretty">Service transformation, operational economics, future-state capabilities, executive decision.</span>
+              <span style="display:flex;flex-wrap:wrap;gap:8px">
+                <span style="border:1px solid var(--border-rule);border-radius:var(--radius-tag);padding:4px 9px;font-size:13px;color:var(--ink-700)">Service design</span>
+                <span style="border:1px solid var(--border-rule);border-radius:var(--radius-tag);padding:4px 9px;font-size:13px;color:var(--ink-700)">Operational analysis</span>
+              </span>
+              <span style="display:flex;justify-content:flex-end;margin-top:auto;padding-top:8px"><span class="ds-row__arrow">&rarr;</span></span>
+            </span>
+          </a>
+          <a class="ds-row" href="SuperForged.dc.html" style="display:flex;flex-direction:column;color:var(--ink-900);border:1px solid var(--border-rule)">
+            <span style="display:block;height:170px;border-bottom:1px solid var(--border-rule)">
+              <image-slot id="home-superforged" shape="rect" fit="cover" placeholder="SuperForged image"></image-slot>
+            </span>
+            <span style="display:flex;flex-direction:column;flex:1;gap:12px;padding:var(--card-padding)">
+              <span style="display:flex;align-items:center;gap:12px">
+                <img src="design-system/assets/superforged-logo.png" alt="SuperForged" style="height:22px;width:auto;mix-blend-mode:multiply" />
+              </span>
+              <span style="display:block;font-size:clamp(19px,2vw,23px);font-weight:500;letter-spacing:-0.025em;line-height:1.2;text-wrap:pretty">SuperForged</span>
+              <span style="display:block;font-size:16px;font-weight:500;letter-spacing:-0.015em;line-height:1.35;color:var(--ink-700);text-wrap:pretty">Designing the product, business, and customer experience together</span>
+              <span style="display:block;font-size:15px;line-height:1.55;color:var(--ink-500);text-wrap:pretty">Founder-led physical product, commerce, operations, and customer accountability.</span>
+              <span style="display:flex;flex-wrap:wrap;gap:8px">
+                <span style="border:1px solid var(--border-rule);border-radius:var(--radius-tag);padding:4px 9px;font-size:13px;color:var(--ink-700)">Product direction</span>
+                <span style="border:1px solid var(--border-rule);border-radius:var(--radius-tag);padding:4px 9px;font-size:13px;color:var(--ink-700)">Commerce</span>
+              </span>
+              <span style="display:flex;justify-content:flex-end;margin-top:auto;padding-top:8px"><span class="ds-row__arrow">&rarr;</span></span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section style="border-top:1px solid var(--border-rule);padding:var(--gap-section-y) 0;display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+      <div style="font-size:var(--type-marker-size);font-weight:var(--type-marker-weight);color:var(--text-accent);line-height:var(--type-marker-leading)"><span style="font-weight:400">04</span><br />How I work</div>
+      <div>
+        <h2 style="margin:0;max-width:var(--measure-heading);font-size:var(--type-section-size);font-weight:500;letter-spacing:-0.03em;line-height:1.1;text-wrap:pretty">From ambiguity to something a business can act on.</h2>
+        <div style="margin-top:var(--gap-heading-to-content);max-width:var(--measure-row);overflow:hidden">
+          <div style="margin-bottom:-1px">
+            <div style="display:grid;grid-template-columns:24px minmax(0,1fr);gap:12px;align-items:start;padding:16px 0;border-bottom:1px solid var(--border-rule)">
+              <span style="font-size:16px;font-weight:700;color:var(--text-accent);font-variant-numeric:tabular-nums">01</span>
+              <div><h3 style="margin:0;font-size:16px;font-weight:600;letter-spacing:-0.01em;line-height:1.35">Ambiguity</h3><p style="margin:8px 0 0;font-size:15px;line-height:1.6;color:var(--ink-500);text-wrap:pretty">One or two sentences on what the starting condition usually looks like.</p></div>
+            </div>
+            <div style="display:grid;grid-template-columns:24px minmax(0,1fr);gap:12px;align-items:start;padding:16px 0;border-bottom:1px solid var(--border-rule)">
+              <span style="font-size:16px;font-weight:700;color:var(--text-accent);font-variant-numeric:tabular-nums">02</span>
+              <div><h3 style="margin:0;font-size:16px;font-weight:600;letter-spacing:-0.01em;line-height:1.35">Understanding</h3><p style="margin:8px 0 0;font-size:15px;line-height:1.6;color:var(--ink-500);text-wrap:pretty">One or two sentences on how evidence gets gathered and turned into a model.</p></div>
+            </div>
+            <div style="display:grid;grid-template-columns:24px minmax(0,1fr);gap:12px;align-items:start;padding:16px 0;border-bottom:1px solid var(--border-rule)">
+              <span style="font-size:16px;font-weight:700;color:var(--text-accent);font-variant-numeric:tabular-nums">03</span>
+              <div><h3 style="margin:0;font-size:16px;font-weight:600;letter-spacing:-0.01em;line-height:1.35">Direction</h3><p style="margin:8px 0 0;font-size:15px;line-height:1.6;color:var(--ink-500);text-wrap:pretty">One or two sentences on how understanding becomes a decision leadership can make.</p></div>
+            </div>
+            <div style="display:grid;grid-template-columns:24px minmax(0,1fr);gap:12px;align-items:start;padding:16px 0;border-bottom:1px solid var(--border-rule)">
+              <span style="font-size:16px;font-weight:700;color:var(--text-accent);font-variant-numeric:tabular-nums">04</span>
+              <div><h3 style="margin:0;font-size:16px;font-weight:600;letter-spacing:-0.01em;line-height:1.35">Delivery</h3><p style="margin:8px 0 0;font-size:15px;line-height:1.6;color:var(--ink-500);text-wrap:pretty">One or two sentences on how the direction survives contact with development.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="border-top:1px solid var(--border-rule);padding:var(--gap-section-y) 0;display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+      <div style="font-size:var(--type-marker-size);font-weight:var(--type-marker-weight);color:var(--text-accent);line-height:var(--type-marker-leading)"><span style="font-weight:400">05</span><br />Career range</div>
+      <div>
+        <h2 style="margin:0;max-width:var(--measure-heading);font-size:var(--type-section-size);font-weight:500;letter-spacing:-0.03em;line-height:1.1;text-wrap:pretty">Four kinds of responsibility, one practice.</h2>
+        <div style="margin-top:var(--gap-heading-to-content);background:var(--surface-raised);box-shadow:var(--shadow-card);overflow:hidden"><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));margin:0 -1px -1px 0">
+          <div class="ds-tile" style="display:flex;flex-direction:column;gap:12px;padding:clamp(18px,2.2vw,26px);min-height:var(--bento-row-height);box-shadow:inset -1px 0 0 var(--border-rule),inset 0 -1px 0 var(--border-rule)">
+            <div style="margin-top:auto"><h3 style="margin:0;font-size:clamp(17px,1.8vw,21px);font-weight:500;letter-spacing:-0.025em;line-height:1.15">Enterprise consulting</h3><p style="margin:10px 0 0;font-size:14px;line-height:1.55;color:var(--ink-500);text-wrap:pretty">One line on the scale and kind of client.</p></div>
+          </div>
+          <div class="ds-tile" style="display:flex;flex-direction:column;gap:12px;padding:clamp(18px,2.2vw,26px);min-height:var(--bento-row-height);box-shadow:inset -1px 0 0 var(--border-rule),inset 0 -1px 0 var(--border-rule)">
+            <div style="margin-top:auto"><h3 style="margin:0;font-size:clamp(17px,1.8vw,21px);font-weight:500;letter-spacing:-0.025em;line-height:1.15">Design leadership</h3><p style="margin:10px 0 0;font-size:14px;line-height:1.55;color:var(--ink-500);text-wrap:pretty">One line on team size and what changed under it.</p></div>
+          </div>
+          <div class="ds-tile" style="display:flex;flex-direction:column;gap:12px;padding:clamp(18px,2.2vw,26px);min-height:var(--bento-row-height);box-shadow:inset -1px 0 0 var(--border-rule),inset 0 -1px 0 var(--border-rule)">
+            <div style="margin-top:auto"><h3 style="margin:0;font-size:clamp(17px,1.8vw,21px);font-weight:500;letter-spacing:-0.025em;line-height:1.15">Hands-on craft</h3><p style="margin:10px 0 0;font-size:14px;line-height:1.55;color:var(--ink-500);text-wrap:pretty">One line on what still gets made personally.</p></div>
+          </div>
+          <div class="ds-tile" style="display:flex;flex-direction:column;gap:12px;padding:clamp(18px,2.2vw,26px);min-height:var(--bento-row-height);box-shadow:inset -1px 0 0 var(--border-rule),inset 0 -1px 0 var(--border-rule)">
+            <div style="margin-top:auto"><h3 style="margin:0;font-size:clamp(17px,1.8vw,21px);font-weight:500;letter-spacing:-0.025em;line-height:1.15">Founder experience</h3><p style="margin:10px 0 0;font-size:14px;line-height:1.55;color:var(--ink-500);text-wrap:pretty">One line on owning the outcome directly.</p></div>
+          </div>
+        </div></div>
+      </div>
+    </section>
+
+    <section style="border-top:1px solid var(--border-rule);padding:var(--gap-section-y) 0;display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+      <div style="font-size:var(--type-marker-size);font-weight:var(--type-marker-weight);color:var(--text-accent);line-height:var(--type-marker-leading)"><span style="font-weight:400">06</span><br />Close</div>
+      <div>
+        <div style="background:var(--surface-panel);padding:var(--panel-padding)">
+          <h2 style="margin:0;max-width:var(--measure-heading);font-size:var(--type-section-size);font-weight:500;letter-spacing:-0.03em;line-height:1.1;text-wrap:pretty">I am interested in consequential product, service, and organizational challenges.</h2>
+          <p style="margin:var(--gap-heading-to-para) 0 0;max-width:var(--measure-body);font-size:16px;line-height:1.65;color:var(--ink-700);text-wrap:pretty">If that sounds like the work in front of you, let&rsquo;s talk.</p>
+          <div style="margin-top:var(--gap-block);display:flex;flex-wrap:wrap;align-items:baseline;gap:clamp(20px,3vw,32px)">
+            <a class="ds-link" href="Contact.dc.html" style="font-size:var(--type-cta-size);font-weight:var(--type-cta-weight);letter-spacing:var(--type-cta-tracking)">Start a conversation</a>
+            <a class="ds-link ds-link--secondary" href="Resume.dc.html" style="font-size:15px;font-weight:500">Read my resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer style="border-top:1px solid var(--border-rule)">
+    <div style="max-width:var(--container-max);margin:0 auto;padding:clamp(32px,5vw,56px) var(--container-pad);display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:var(--gap-grid);align-items:baseline">
+      <span style="font-size:13px;font-weight:500">Bruce Criscuolo</span>
+      <a class="ds-link ds-link--secondary" href="mailto:" style="font-size:13px;justify-self:start">email@domain.com</a>
+      <a class="ds-link ds-link--secondary" href="#" style="font-size:13px;justify-self:start">LinkedIn</a>
+      <span style="font-size:13px;color:var(--ink-500)">City, region</span>
+      <span style="font-size:13px;color:var(--ink-500)">Open to principal design and design leadership conversations.</span>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{}"></script>
+</body>
+</html>

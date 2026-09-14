@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="design-system/styles.css">
+<script src="./image-slot.js"></script>
+<style>
+body{overflow-x:clip;}
+</style>
+</helmet>
+
+<div style="font-family:var(--font-sans);color:var(--ink-900);background:var(--surface-page);-webkit-font-smoothing:antialiased">
+
+  <header data-screen-label="SuperForged" style="position:sticky;top:0;z-index:60;background:var(--surface-header);border-bottom:1px solid var(--border-rule)">
+    <div style="max-width:var(--container-max);margin:0 auto;padding:var(--header-pad-y) var(--container-pad);display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px">
+      <a href="Home.dc.html" style="font-size:16px;font-weight:600;letter-spacing:-0.01em;color:var(--ink-900)">Bruce Criscuolo</a>
+      <nav style="display:flex;flex-wrap:wrap;align-items:baseline;gap:clamp(12px,1.8vw,26px);font-size:13px;font-weight:500;letter-spacing:0.01em">
+        <a class="ds-navlink" href="Work.dc.html" aria-current="page">Work</a>
+        <a class="ds-navlink" href="About.dc.html">About</a>
+        <a class="ds-navlink" href="Resume.dc.html">Resume</a>
+        <a class="ds-navlink" href="Contact.dc.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div style="width:100vw;margin-left:calc(50% - 50vw);border-bottom:1px solid var(--border-rule);height:clamp(320px,62vh,720px)">
+    <image-slot id="sf-hero" shape="rect" fit="cover" placeholder="Installed product hero — forged wheels on the vehicle they were engineered for"></image-slot>
+  </div>
+
+  <div style="max-width:var(--container-max);margin:0 auto;padding:0 var(--container-pad)">
+
+    <section style="padding:var(--gap-section-y) 0 var(--gap-block);display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+      <div><a class="ds-link ds-link--secondary" href="Work.dc.html" style="font-size:15px;font-weight:500">← View All Work</a></div>
+      <div>
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:clamp(16px,3vw,28px)">
+          <img src="design-system/assets/superforged-logo.png" alt="SuperForged" style="height:30px;width:auto;mix-blend-mode:multiply">
+          <span style="font-size:13px;color:var(--ink-400);font-variant-numeric:tabular-nums">Founder · product · 4–6 minute read</span>
+        </div>
+        <h1 style="margin:26px 0 0;max-width:var(--measure-heading);font-size:var(--type-title-size);font-weight:500;letter-spacing:-0.038em;line-height:1.03;text-wrap:pretty">Designing the product, business, and customer experience together.</h1>
+        <p style="margin:var(--gap-heading-to-para) 0 0;max-width:var(--measure-lead);font-size:var(--type-lead-size);line-height:1.6;color:var(--ink-700);text-wrap:pretty">A focused enthusiast need became an engineered product and a direct customer business.</p>
+        <p style="margin: 18px 0 0; max-width: var(--measure-body); font-size: 17px; line-height: 1.65; color: #3A3A38; text-wrap: pretty">Two or three sentences stating what the product is, what I decided, and what was at stake. My own capital, reputation, supplier relationships, and customer trust — every product decision carried a consequence I paid for directly.</p>
+
+        <div style="margin-top:var(--gap-heading-to-content);display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:0 var(--gap-grid)">
+          <div style="padding-bottom:16px;border-bottom:1px solid var(--border-rule)"><div style="font-size:17px;font-weight:600;letter-spacing:-0.015em;line-height:1.3">My role</div><div style="margin-top:8px;font-size:15px;line-height:1.45;color:var(--ink-500)">Founder and product lead</div></div>
+          <div style="padding-bottom:16px;border-bottom:1px solid var(--border-rule)"><div style="font-size:17px;font-weight:600;letter-spacing:-0.015em;line-height:1.3">Scope</div><div style="margin-top:8px;font-size:15px;line-height:1.45;color:var(--ink-500)">Product direction, design, supplier collaboration, brand, commerce, support</div></div>
+          <div style="padding-bottom:16px;border-bottom:1px solid var(--border-rule)"><div style="font-size:17px;font-weight:600;letter-spacing:-0.015em;line-height:1.3">Since</div><div style="margin-top:8px;font-size:15px;line-height:1.45;color:var(--ink-500)">0000</div></div>
+          <div style="padding-bottom:16px;border-bottom:1px solid var(--border-rule)"><div style="font-size:17px;font-weight:600;letter-spacing:-0.015em;line-height:1.3">Accountability</div><div style="margin-top:8px;font-size:15px;line-height:1.45;color:var(--ink-500)">Direct to customer, end to end</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section style="border-top:1px solid var(--border-rule);padding:var(--gap-section-y) 0;display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+      <div style="font-size:var(--type-marker-size);font-weight:var(--type-marker-weight);color:var(--text-accent);line-height:var(--type-marker-leading)"><span style="font-weight:400">01</span><br>Context</div>
+      <div>
+        <h2 style="margin:0;max-width:var(--measure-heading);font-size:var(--type-section-size);font-weight:500;letter-spacing:-0.03em;line-height:1.1;text-wrap:pretty">Safety, fitment, tolerances, manufacturing, and low-volume economics are inseparable.</h2>
+        <p style="margin:var(--gap-heading-to-para) 0 0;max-width:var(--measure-body);font-size:16px;line-height:1.65;color:var(--ink-700);text-wrap:pretty">Two paragraphs on the conditions. A wheel that clears the caliper by two millimetres is a different product from one that does not, and the customer finds out in their driveway. Nothing here can be resolved in isolation.</p>
+        <p style="margin:18px 0 0;max-width:var(--measure-body);font-size:16px;line-height:1.65;color:var(--ink-700);text-wrap:pretty">Second paragraph: low volume means every tooling decision, minimum order, and finish choice has to earn its place against a real order book.</p>
+
+        <div style="margin-top:var(--gap-heading-to-content);overflow:hidden"><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0;margin:0 -1px -1px 0;">
+          <div style="display:flex;flex-direction:column;gap:8px;padding:18px clamp(12px,1.4vw,18px) 20px;box-shadow:inset -1px 0 0 var(--border-rule),inset 0 -1px 0 var(--border-rule)">
+            <span style="font-size:clamp(17px,1.8vw,21px);font-weight:700;color:var(--text-accent);line-height:1.25;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">01</span>
+            <span style="font-size:clamp(16px,1.6vw,19px);letter-spacing:-0.015em;line-height:1.35;color:var(--ink-700);text-wrap:pretty">Safety and load rating</span>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:8px;padding:18px clamp(12px,1.4vw,18px) 20px;box-shadow:inset -1px 0 0 var(--border-rule),inset 0 -1px 0 var(--border-rule)">
+            <span style="font-size:clamp(17px,1.8vw,21px);font-weight:700;color:var(--text-accent);line-height:1.25;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">02</span>
+            <span style="font-size:clamp(16px,1.6vw,19px);letter-spacing:-0.015em;line-height:1.35;color:var(--ink-700);text-wrap:pretty">Fitment and clearance</span>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:8px;padding:18px clamp(12px,1.4vw,18px) 20px;box-shadow:inset -1px 0 0 var(--border-rule),inset 0 -1px 0 var(--border-rule)">
+            <span style="font-size:clamp(17px,1.8vw,21px);font-weight:700;color:var(--text-accent);line-height:1.25;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">03</span>
+            <span style="font-size:clamp(16px,1.6vw,19px);letter-spacing:-0.015em;line-height:1.35;color:var(--ink-700);text-wrap:pretty">Manufacturing tolerance</span>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:8px;padding:18px clamp(12px,1.4vw,18px) 20px;box-shadow:inset -1px 0 0 var(--border-rule),inset 0 -1px 0 var(--border-rule)">
+            <span style="font-size:clamp(17px,1.8vw,21px);font-weight:700;color:var(--text-accent);line-height:1.25;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">04</span>
+            <span style="font-size:clamp(16px,1.6vw,19px);letter-spacing:-0.015em;line-height:1.35;color:var(--ink-700);text-wrap:pretty">Low-volume economics</span>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:8px;padding:18px clamp(12px,1.4vw,18px) 20px;box-shadow:inset -1px 0 0 var(--border-rule),inset 0 -1px 0 var(--border-rule)">
+            <span style="font-size:clamp(17px,1.8vw,21px);font-weight:700;color:var(--text-accent);line-height:1.25;letter-spacing:-0.01em;font-variant-numeric:tabular-nums">05</span>
+            <span style="font-size:clamp(16px,1.6vw,19px);letter-spacing:-0.015em;line-height:1.35;color:var(--ink-700);text-wrap:pretty">Customer expectation</span>
+          </div>
+        </div></div>
+        <p style="margin:16px 0 0;max-width:var(--measure-body);font-size:13px;line-height:1.6;color:var(--ink-500);text-wrap:pretty">Five constraints that move together. Relaxing any one of them shows up somewhere else.</p>
+
+        <div style="margin-top:var(--gap-block)">
+          <div style="height:clamp(260px,38vw,520px);box-shadow:var(--shadow-card)">
+            <image-slot id="sf-context" shape="rect" fit="cover" placeholder="Vehicle and product context — the platform and the gap the product fills"></image-slot>
+          </div>
+          <p style="margin:16px 0 0;max-width:var(--measure-body);font-size:13px;line-height:1.6;color:var(--ink-500);text-wrap:pretty">Caption. What this platform made possible and what it ruled out.</p>
+        </div>
+      </div>
+    </section>
+
+    <section style="border-top:1px solid var(--border-rule);padding:var(--gap-section-y) 0;display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+      <div style="font-size:var(--type-marker-size);font-weight:var(--type-marker-weight);color:var(--text-accent);line-height:var(--type-marker-leading)"><span style="font-weight:400">02</span><br>Mandate</div>
+      <div>
+        <h2 style="margin:0;max-width:var(--measure-heading);font-size:var(--type-section-size);font-weight:500;letter-spacing:-0.03em;line-height:1.1;text-wrap:pretty">I own product direction, design, supplier collaboration, brand, commerce, and customer support.</h2>
+        <p style="margin:var(--gap-heading-to-para) 0 0;max-width:var(--measure-body);font-size:16px;line-height:1.65;color:var(--ink-700);text-wrap:pretty">One paragraph on what founder accountability means in practice: the same person who approves the drawing answers the support email.</p>
+        <div style="margin-top:var(--gap-heading-to-content);display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--gap-grid);max-width:60em">
+          <div style="background:var(--surface-panel);padding:var(--panel-padding)">
+            <div style="font-size:17px;font-weight:600;letter-spacing:-0.015em">What I make myself</div>
+            <div style="margin-top:20px;max-width:var(--measure-row);overflow:hidden">
+              <div style="margin-bottom:-1px">
+                <div style="display:grid;grid-template-columns:20px minmax(0,1fr);gap:12px;align-items:start;padding:14px 0;border-bottom:1px solid var(--border-rule);font-size:15px;line-height:1.55;color:var(--ink-700)"><span style="color:var(--text-accent)">→</span><span>One line per responsibility.</span></div>
+                <div style="display:grid;grid-template-columns:20px minmax(0,1fr);gap:12px;align-items:start;padding:14px 0;border-bottom:1px solid var(--border-rule);font-size:15px;line-height:1.55;color:var(--ink-700)"><span style="color:var(--text-accent)">→</span><span>One line per responsibility.</span></div>
+                <div style="display:grid;grid-template-columns:20px minmax(0,1fr);gap:12px;align-items:start;padding:14px 0;border-bottom:1px solid var(--border-rule);font-size:15px;line-height:1.55;color:var(--ink-700)"><span style="color:var(--text-accent)">→</span><span>One line per responsibility.</span></div>
+              </div>
+            </div>
+          </div>
+          <div style="background:var(--surface-panel);padding:var(--panel-padding)">
+            <div style="font-size:17px;font-weight:600;letter-spacing:-0.015em">What partners carry</div>
+            <div style="margin-top:20px;max-width:var(--measure-row);overflow:hidden">
+              <div style="margin-bottom:-1px">
+                <div style="display:grid;grid-template-columns:20px minmax(0,1fr);gap:12px;align-items:start;padding:14px 0;border-bottom:1px solid var(--border-rule);font-size:15px;line-height:1.55;color:var(--ink-700)"><span style="color:var(--text-accent)">→</span><span>Manufacturing and finishing, stated separately from my own work.</span></div>
+                <div style="display:grid;grid-template-columns:20px minmax(0,1fr);gap:12px;align-items:start;padding:14px 0;border-bottom:1px solid var(--border-rule);font-size:15px;line-height:1.55;color:var(--ink-700)"><span style="color:var(--text-accent)">→</span><span>Stated separately from my own work.</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="border-top:1px solid var(--border-rule);padding:var(--gap-section-y) 0;display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+      <div style="font-size:var(--type-marker-size);font-weight:var(--type-marker-weight);color:var(--text-accent);line-height:var(--type-marker-leading)"><span style="font-weight:400">03</span><br>Insight and decisions</div>
+      <div>
+        <h2 style="margin:0;max-width:var(--measure-heading);font-size:var(--type-section-size);font-weight:500;letter-spacing:-0.03em;line-height:1.1;text-wrap:pretty">Direct community contact surfaces unmet needs and product risk faster than any research plan.</h2>
+        <p style="margin:var(--gap-heading-to-para) 0 0;max-width:var(--measure-body);font-size:16px;line-height:1.65;color:var(--ink-700);text-wrap:pretty">One or two paragraphs on where the signal comes from: forum threads, support conversations, fitment questions before purchase. The same channel that sells the product tells you what is wrong with it.</p>
+
+        <div style="margin-top:var(--gap-heading-to-content);background:var(--surface-panel);padding:var(--panel-padding)">
+          <div style="font-size:13px;font-weight:700;color:var(--text-accent);line-height:1.6">The decision</div>
+          <p style="margin:14px 0 0;max-width:var(--measure-body);font-size:16px;line-height:1.65;color:var(--ink-700);text-wrap:pretty">One paragraph on the decision this evidence forced — a specification change, a fitment range, a documentation requirement — and what it cost to make.</p>
+        </div>
+
+        <div style="margin-top:var(--gap-block)">
+          <div style="height:clamp(260px,38vw,520px);box-shadow:var(--shadow-card)">
+            <image-slot id="sf-fitment" shape="rect" fit="contain" placeholder="Engineering or fitment evidence — CAD, clearance study, or measured fitment"></image-slot>
+          </div>
+          <p style="margin:16px 0 0;max-width:var(--measure-body);font-size:13px;line-height:1.6;color:var(--ink-500);text-wrap:pretty">Caption. What this artifact resolved. Supplier-sensitive detail is withheld.</p>
+        </div>
+      </div>
+    </section>
+
+    <section style="border-top:1px solid var(--border-rule);padding:var(--gap-section-y) 0;display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+      <div style="font-size:var(--type-marker-size);font-weight:var(--type-marker-weight);color:var(--text-accent);line-height:var(--type-marker-leading)"><span style="font-weight:400">04</span><br>Designed response</div>
+      <div>
+        <h2 style="margin:0;max-width:var(--measure-heading);font-size:var(--type-section-size);font-weight:500;letter-spacing:-0.03em;line-height:1.1;text-wrap:pretty">A product is the hardware plus everything a customer needs to buy it with confidence.</h2>
+        <p style="margin:var(--gap-heading-to-para) 0 0;max-width:var(--measure-body);font-size:16px;line-height:1.65;color:var(--ink-700);text-wrap:pretty">One or two paragraphs on the four things that ship together: forged wheels and braking systems, technical documentation, fitment work, and the commerce and post-sale service around them.</p>
+
+        <div style="margin-top:var(--gap-heading-to-content);overflow:hidden"><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:0;margin:0 -1px -1px 0;">
+          <div style="padding:var(--tile-padding);box-shadow:inset -1px 0 0 var(--border-rule),inset 0 -1px 0 var(--border-rule)">
+            <div style="font-size:13px;font-weight:700;color:var(--text-accent);line-height:1.6">01</div>
+            <div style="margin-top:10px;font-size:clamp(16px,1.6vw,19px);font-weight:500;letter-spacing:-0.02em;line-height:1.25;text-wrap:pretty">Hardware</div>
+            <p style="margin:12px 0 0;font-size:15px;line-height:1.55;color:var(--ink-700);text-wrap:pretty">Forged wheels and braking systems.</p>
+          </div>
+          <div style="padding:var(--tile-padding);box-shadow:inset -1px 0 0 var(--border-rule),inset 0 -1px 0 var(--border-rule)">
+            <div style="font-size:13px;font-weight:700;color:var(--text-accent);line-height:1.6">02</div>
+            <div style="margin-top:10px;font-size:clamp(16px,1.6vw,19px);font-weight:500;letter-spacing:-0.02em;line-height:1.25;text-wrap:pretty">Documentation</div>
+            <p style="margin:12px 0 0;font-size:15px;line-height:1.55;color:var(--ink-700);text-wrap:pretty">Specifications a buyer can check against their own car.</p>
+          </div>
+          <div style="padding:var(--tile-padding);box-shadow:inset -1px 0 0 var(--border-rule),inset 0 -1px 0 var(--border-rule)">
+            <div style="font-size:13px;font-weight:700;color:var(--text-accent);line-height:1.6">03</div>
+            <div style="margin-top:10px;font-size:clamp(16px,1.6vw,19px);font-weight:500;letter-spacing:-0.02em;line-height:1.25;text-wrap:pretty">Commerce</div>
+            <p style="margin:12px 0 0;font-size:15px;line-height:1.55;color:var(--ink-700);text-wrap:pretty">Ordering that resolves fitment before payment.</p>
+          </div>
+          <div style="padding:var(--tile-padding);box-shadow:inset -1px 0 0 var(--border-rule),inset 0 -1px 0 var(--border-rule)">
+            <div style="font-size:13px;font-weight:700;color:var(--text-accent);line-height:1.6">04</div>
+            <div style="margin-top:10px;font-size:clamp(16px,1.6vw,19px);font-weight:500;letter-spacing:-0.02em;line-height:1.25;text-wrap:pretty">Post-sale service</div>
+            <p style="margin:12px 0 0;font-size:15px;line-height:1.55;color:var(--ink-700);text-wrap:pretty">The part that decides whether a customer returns.</p>
+          </div>
+        </div></div>
+
+        <div style="margin-top:var(--gap-block);display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:var(--gap-grid)">
+          <div>
+            <div style="height:clamp(240px,30vw,400px);box-shadow:var(--shadow-card)">
+              <image-slot id="sf-hardware" shape="rect" fit="cover" placeholder="Finished hardware — forged wheel or braking system detail"></image-slot>
+            </div>
+            <p style="margin:16px 0 0;font-size:13px;line-height:1.6;color:var(--ink-500);text-wrap:pretty">Caption. One detail that only exists because of a decision made upstream.</p>
+          </div>
+          <div>
+            <div style="height:clamp(240px,30vw,400px);box-shadow:var(--shadow-card)">
+              <image-slot id="sf-experience" shape="rect" fit="cover" placeholder="Customer or operating-system moment — ordering, packaging, or support"></image-slot>
+            </div>
+            <p style="margin:16px 0 0;font-size:13px;line-height:1.6;color:var(--ink-500);text-wrap:pretty">Caption. What this moment does for a customer spending real money on a fit they cannot test first.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="border-top:1px solid var(--border-rule);padding:var(--gap-section-y) 0;display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+      <div style="font-size:var(--type-marker-size);font-weight:var(--type-marker-weight);color:var(--text-accent);line-height:var(--type-marker-leading)"><span style="font-weight:400">05</span><br>Outcome and reflection</div>
+      <div>
+        <h2 style="margin:0;max-width:var(--measure-heading);font-size:var(--type-section-size);font-weight:500;letter-spacing:-0.03em;line-height:1.1;text-wrap:pretty">The business runs on repeat customers and referral.</h2>
+        <p style="margin:var(--gap-heading-to-para) 0 0;max-width:var(--measure-body);font-size:16px;line-height:1.65;color:var(--ink-700);text-wrap:pretty">One paragraph on the verified result. Use one commercial, adoption, repeat-customer, or service figure that can be shared publicly, with the approved phrase.</p>
+
+        <div style="margin-top:var(--gap-heading-to-content);display:flex;flex-wrap:wrap;gap:var(--gap-grid)">
+          <div class="ds-tile" style="background:var(--surface-panel);aspect-ratio:1 / 1;width:100%;max-width:300px;display:flex;flex-direction:column;justify-content:space-between;padding:var(--card-padding)">
+            <span style="font-size:13px;font-weight:700;color:var(--text-accent);line-height:1.6">Verified result</span>
+            <div>
+              <div style="font-weight:400;letter-spacing:-0.045em;line-height:0.95;font-variant-numeric:tabular-nums;font-size:var(--type-figure-lg)">00</div>
+              <div style="margin-top:12px;font-size:clamp(14px,1.4vw,17px);letter-spacing:-0.015em;line-height:1.3;color:var(--ink-700);text-wrap:pretty">Placeholder — one approved metric and its source</div>
+            </div>
+          </div>
+          <div style="flex:1 1 280px;min-width:0;background:var(--surface-panel);padding:var(--panel-padding)">
+            <div style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Customer evidence</div>
+            <p style="margin:18px 0 0;max-width:var(--measure-body);font-size:15px;line-height:1.6;color:var(--ink-700);text-wrap:pretty">One short customer quote or service record, attributed as far as permission allows. Supplier terms, cost structure, and order volumes are not published.</p>
+          </div>
+        </div>
+
+        <h3 style="margin:var(--gap-block) 0 0;max-width:var(--measure-heading);font-size:var(--type-phase-size);font-weight:500;letter-spacing:-0.025em;text-wrap:pretty">One reflection.</h3>
+        <p style="margin:18px 0 0;max-width:var(--measure-body);font-size:16px;line-height:1.65;color:var(--ink-700);text-wrap:pretty">One paragraph: what running a product business changed about how I make design decisions inside a client engagement.</p>
+      </div>
+    </section>
+
+    <section style="border-top:1px solid var(--border-rule);padding:var(--gap-section-y) 0;display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+      <div style="font-size:var(--type-marker-size);font-weight:var(--type-marker-weight);color:var(--text-accent);line-height:var(--type-marker-leading)"><span style="font-weight:400">06</span><br>Next</div>
+      <div>
+        <a class="ds-row" href="Resume.dc.html" style="color:var(--ink-900);display:grid;grid-template-columns:minmax(0,1fr) 28px;gap:clamp(14px,2.4vw,32px);align-items:center;padding:var(--card-padding) clamp(10px,1.4vw,16px);border-top:1px solid var(--border-rule);border-bottom:1px solid var(--border-rule)">
+          <span style="min-width:0">
+            <span style="display:block;font-size:13px;font-weight:500;letter-spacing:0.02em;color:var(--ink-500)">Next · Resume</span>
+            <span style="display:block;margin-top:8px;font-size:clamp(18px,2.1vw,26px);font-weight:500;letter-spacing:-0.025em;line-height:1.2;text-wrap:pretty">Level, range, chronology, and qualifications</span>
+          </span>
+          <span class="ds-row__arrow">→</span>
+        </a>
+        <div style="margin-top:var(--gap-block);display:flex;flex-wrap:wrap;align-items:baseline;gap:clamp(20px,3vw,32px)">
+          <a class="ds-link" href="Contact.dc.html" style="font-size:var(--type-cta-size);font-weight:var(--type-cta-weight);letter-spacing:var(--type-cta-tracking)">Start a conversation</a>
+          <a class="ds-link ds-link--secondary" href="Work.dc.html" style="font-size:15px;font-weight:500">Back to all work</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer style="border-top:1px solid var(--border-rule)">
+    <div style="max-width:var(--container-max);margin:0 auto;padding:clamp(32px,5vw,56px) var(--container-pad);display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:var(--gap-grid);align-items:baseline">
+      <span style="font-size:13px;font-weight:500">Bruce Criscuolo</span>
+      <a class="ds-link ds-link--secondary" href="mailto:" style="font-size:13px;justify-self:start">email@domain.com</a>
+      <a class="ds-link ds-link--secondary" href="#" style="font-size:13px;justify-self:start">LinkedIn</a>
+      <span style="font-size:13px;color:var(--ink-500)">City, region</span>
+      <span style="font-size:13px;color:var(--ink-500)">Open to principal design and design leadership conversations.</span>
+    </div>
+  </footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{}"></script>
+</body>
+</html>

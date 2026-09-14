@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="design-system/styles.css" />
+<style>
+body{overflow-x:clip;}
+</style>
+</helmet>
+
+<div style="font-family:var(--font-sans);color:var(--ink-900);background:var(--paper-100);-webkit-font-smoothing:antialiased">
+
+  <header style="background:var(--paper-300);border-bottom:1px solid var(--line-400)">
+    <div style="max-width:var(--container-max);margin:0 auto;padding:var(--header-pad-y) var(--container-pad);display:flex;align-items:center;justify-content:space-between;gap:24px">
+      <span style="font-size:16px;font-weight:600;letter-spacing:-0.01em">I&rsquo;m Bruce.</span>
+      <span style="display:flex;align-items:center;gap:20px;font-size:13px;color:var(--ink-500)">
+        <a href="Home.dc.html" style="color:var(--ink-500)">Home</a>
+        <span style="color:var(--ink-900)">Design system</span>
+        <a href="Section Library.dc.html" style="color:var(--ink-500)">Sections</a>
+        <span style="display:inline-flex;align-items:center;gap:7px"><span style="width:7px;height:7px;border-radius:50%;background:var(--green-500);display:inline-block"></span>Available</span>
+      </span>
+    </div>
+  </header>
+
+  <div style="max-width:var(--container-max);margin:0 auto;padding:0 var(--container-pad)">
+
+    <section style="padding:var(--gap-section-y) 0 clamp(40px,6vw,72px);display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+      <div></div>
+      <div>
+        <h1 style="margin:0;max-width:var(--measure-heading);font-size:var(--type-title-size);font-weight:500;letter-spacing:-0.038em;line-height:1.03">The system, on one page.</h1>
+        <p style="margin:22px 0 0;max-width:var(--measure-lead);font-size:var(--type-lead-size);line-height:1.6;color:var(--ink-700)">One ink, one accent, a short ladder of warm papers, and Standerd throughout. Every page is a two-column grid: a numbered rail, then the content. Rules are hairlines. Corners are square. The background moves and the text does not.</p>
+      </div>
+    </section>
+
+    <section style="border-top:1px solid var(--line-400);padding:var(--gap-section-y) 0;display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+      <div style="font-size:13px;font-weight:700;color:var(--text-accent);font-variant-numeric:tabular-nums">01 Color</div>
+      <div>
+        <h2 style="margin:0;max-width:var(--measure-heading);font-size:var(--type-section-size);font-weight:500;letter-spacing:-0.03em;line-height:1.1">One ink, one accent, four greys of paper.</h2>
+        <p style="margin:22px 0 0;max-width:var(--measure-body);font-size:16px;line-height:1.65;color:var(--ink-700)">The accent is reserved for section markers, numerals, arrows and links. It is never a fill behind text. Green exists only as the availability dot. No gradients anywhere.</p>
+
+        <div style="margin-top:var(--gap-heading-to-content);display:grid;gap:var(--gap-grid)">
+
+          <div>
+            <div style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Ink</div>
+            <div style="margin-top:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));border-top:1px solid var(--line-400);border-left:1px solid var(--line-400)">
+              <div style="padding:14px;border-right:1px solid var(--line-400);border-bottom:1px solid var(--line-400)">
+                <div style="height:76px;background:var(--ink-900)"></div>
+                <div style="margin-top:12px;font-size:13px;font-weight:600;letter-spacing:-0.01em">Heading</div>
+                <sc-if value="{{ showSpecs }}" hint-placeholder-val="{{ true }}"><div style="margin-top:4px;font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">#131313 · ink-900</div></sc-if>
+              </div>
+              <div style="padding:14px;border-right:1px solid var(--line-400);border-bottom:1px solid var(--line-400)">
+                <div style="height:76px;background:var(--ink-700)"></div>
+                <div style="margin-top:12px;font-size:13px;font-weight:600;letter-spacing:-0.01em">Body</div>
+                <sc-if value="{{ showSpecs }}" hint-placeholder-val="{{ true }}"><div style="margin-top:4px;font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">#3A3A38 · ink-700</div></sc-if>
+              </div>
+              <div style="padding:14px;border-right:1px solid var(--line-400);border-bottom:1px solid var(--line-400)">
+                <div style="height:76px;background:var(--ink-500)"></div>
+                <div style="margin-top:12px;font-size:13px;font-weight:600;letter-spacing:-0.01em">Muted</div>
+                <sc-if value="{{ showSpecs }}" hint-placeholder-val="{{ true }}"><div style="margin-top:4px;font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">#6E6E6C · ink-500</div></sc-if>
+              </div>
+              <div style="padding:14px;border-right:1px solid var(--line-400);border-bottom:1px solid var(--line-400)">
+                <div style="height:76px;background:var(--ink-400)"></div>
+                <div style="margin-top:12px;font-size:13px;font-weight:600;letter-spacing:-0.01em">Specs</div>
+                <sc-if value="{{ showSpecs }}" hint-placeholder-val="{{ true }}"><div style="margin-top:4px;font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">#8A8A87 · ink-400</div></sc-if>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Accent</div>
+            <div style="margin-top:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));border-top:1px solid var(--line-400);border-left:1px solid var(--line-400)">
+              <div style="padding:14px;border-right:1px solid var(--line-400);border-bottom:1px solid var(--line-400)">
+                <div style="height:76px;background:var(--accent-600)"></div>
+                <div style="margin-top:12px;font-size:13px;font-weight:600;letter-spacing:-0.01em">Accent</div>
+                <sc-if value="{{ showSpecs }}" hint-placeholder-val="{{ true }}"><div style="margin-top:4px;font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">#B8541F · accent-600</div></sc-if>
+              </div>
+              <div style="padding:14px;border-right:1px solid var(--line-400);border-bottom:1px solid var(--line-400)">
+                <div style="height:76px;background:var(--accent-200)"></div>
+                <div style="margin-top:12px;font-size:13px;font-weight:600;letter-spacing:-0.01em">Accent rule</div>
+                <sc-if value="{{ showSpecs }}" hint-placeholder-val="{{ true }}"><div style="margin-top:4px;font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">#E8CBBB · accent-200</div></sc-if>
+              </div>
+              <div style="padding:14px;border-right:1px solid var(--line-400);border-bottom:1px solid var(--line-400)">
+                <div style="height:76px;background:var(--neutral-200);border:1px solid var(--line-400)"></div>
+                <div style="margin-top:12px;font-size:13px;font-weight:600;letter-spacing:-0.01em">Hover tint</div>
+                <sc-if value="{{ showSpecs }}" hint-placeholder-val="{{ true }}"><div style="margin-top:4px;font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">#ECECEC · neutral tint</div></sc-if>
+              </div>
+              <div style="padding:14px;border-right:1px solid var(--line-400);border-bottom:1px solid var(--line-400)">
+                <div style="height:76px;background:var(--green-500)"></div>
+                <div style="margin-top:12px;font-size:13px;font-weight:600;letter-spacing:-0.01em">Available</div>
+                <sc-if value="{{ showSpecs }}" hint-placeholder-val="{{ true }}"><div style="margin-top:4px;font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">#2E9E5B · green-500</div></sc-if>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Paper and lines</div>
+            <div style="margin-top:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));border-top:1px solid var(--line-400);border-left:1px solid var(--line-400)">
+              <div style="padding:14px;border-right:1px solid var(--line-400);border-bottom:1px solid var(--line-400)">
+                <div style="height:76px;background:var(--paper-000);border:1px solid var(--line-400)"></div>
+                <div style="margin-top:12px;font-size:13px;font-weight:600;letter-spacing:-0.01em">Page</div>
+                <sc-if value="{{ showSpecs }}" hint-placeholder-val="{{ true }}"><div style="margin-top:4px;font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">#FFFFFF · paper-000</div></sc-if>
+              </div>
+              <div style="padding:14px;border-right:1px solid var(--line-400);border-bottom:1px solid var(--line-400)">
+                <div style="height:76px;background:var(--paper-100)"></div>
+                <div style="margin-top:12px;font-size:13px;font-weight:600;letter-spacing:-0.01em">Band</div>
+                <sc-if value="{{ showSpecs }}" hint-placeholder-val="{{ true }}"><div style="margin-top:4px;font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">#F5F5F5 · paper-100</div></sc-if>
+              </div>
+              <div style="padding:14px;border-right:1px solid var(--line-400);border-bottom:1px solid var(--line-400)">
+                <div style="height:76px;background:var(--paper-150)"></div>
+                <div style="margin-top:12px;font-size:13px;font-weight:600;letter-spacing:-0.01em">Image bed</div>
+                <sc-if value="{{ showSpecs }}" hint-placeholder-val="{{ true }}"><div style="margin-top:4px;font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">#F4F3EF · paper-150</div></sc-if>
+              </div>
+              <div style="padding:14px;border-right:1px solid var(--line-400);border-bottom:1px solid var(--line-400)">
+                <div style="height:76px;background:var(--paper-200)"></div>
+                <div style="margin-top:12px;font-size:13px;font-weight:600;letter-spacing:-0.01em">Panel</div>
+                <sc-if value="{{ showSpecs }}" hint-placeholder-val="{{ true }}"><div style="margin-top:4px;font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">#F1F0EC · paper-200</div></sc-if>
+              </div>
+              <div style="padding:14px;border-right:1px solid var(--line-400);border-bottom:1px solid var(--line-400)">
+                <div style="height:76px;background:var(--paper-300)"></div>
+                <div style="margin-top:12px;font-size:13px;font-weight:600;letter-spacing:-0.01em">Header</div>
+                <sc-if value="{{ showSpecs }}" hint-placeholder-val="{{ true }}"><div style="margin-top:4px;font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">#EDECE7 · paper-300</div></sc-if>
+              </div>
+              <div style="padding:14px;border-right:1px solid var(--line-400);border-bottom:1px solid var(--line-400)">
+                <div style="height:76px;background:var(--paper-000);padding:0 10px;display:grid;align-content:center;gap:18px">
+                  <div style="height:1px;background:var(--line-400)"></div>
+                  <div style="height:1px;background:var(--line-200)"></div>
+                </div>
+                <div style="margin-top:12px;font-size:13px;font-weight:600;letter-spacing:-0.01em">Rule / hairline</div>
+                <sc-if value="{{ showSpecs }}" hint-placeholder-val="{{ true }}"><div style="margin-top:4px;font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">#D8D7D1 · #EFEEEA</div></sc-if>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section style="border-top:1px solid var(--line-400);padding:var(--gap-section-y) 0;display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+      <div style="font-size:13px;font-weight:700;color:var(--text-accent);font-variant-numeric:tabular-nums">02 Type</div>
+      <div>
+        <h2 style="margin:0;max-width:var(--measure-heading);font-size:var(--type-section-size);font-weight:500;letter-spacing:-0.03em;line-height:1.1">Standerd, four weights, tight display tracking.</h2>
+        <p style="margin:22px 0 0;max-width:var(--measure-body);font-size:16px;line-height:1.65;color:var(--ink-700)">Display sizes are fluid clamp pairs with negative tracking. Body holds at 16px and 1.65. Measures are capped so a line never runs past comfortable reading: 26em on headings, 34em on body, 36em on lead.</p>
+
+        <div style="margin-top:var(--gap-heading-to-content);display:grid">
+          <div style="border-top:1px solid var(--line-400);padding:26px 0">
+            <sc-if value="{{ showSpecs }}" hint-placeholder-val="{{ true }}"><div style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">Page title · clamp(32px, 5.4vw, 68px) · 500 · &minus;0.038em · 1.03</div></sc-if>
+            <div style="margin-top:10px;max-width:var(--measure-heading);font-size:clamp(32px,5.4vw,58px);font-weight:500;letter-spacing:-0.038em;line-height:1.03">Transforming the claims experience.</div>
+          </div>
+          <div style="border-top:1px solid var(--line-400);padding:26px 0">
+            <sc-if value="{{ showSpecs }}" hint-placeholder-val="{{ true }}"><div style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">Section heading · clamp(24px, 3vw, 38px) · 500 · &minus;0.03em · 1.1</div></sc-if>
+            <div style="margin-top:10px;max-width:var(--measure-heading);font-size:var(--type-section-size);font-weight:500;letter-spacing:-0.03em;line-height:1.1">Four calls that shaped it.</div>
+          </div>
+          <div style="border-top:1px solid var(--line-400);padding:26px 0">
+            <sc-if value="{{ showSpecs }}" hint-placeholder-val="{{ true }}"><div style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">Phase heading · clamp(20px, 2.2vw, 26px) · 500 · &minus;0.025em</div></sc-if>
+            <div style="margin-top:10px;font-size:var(--type-phase-size);font-weight:500;letter-spacing:-0.025em">Discovery and framing</div>
+          </div>
+          <div style="border-top:1px solid var(--line-400);padding:26px 0">
+            <sc-if value="{{ showSpecs }}" hint-placeholder-val="{{ true }}"><div style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">Block label · 17px · 600 · &minus;0.015em</div></sc-if>
+            <div style="margin-top:10px;font-size:17px;font-weight:600;letter-spacing:-0.015em">What we set out to do</div>
+          </div>
+          <div style="border-top:1px solid var(--line-400);padding:26px 0">
+            <sc-if value="{{ showSpecs }}" hint-placeholder-val="{{ true }}"><div style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">Lead · clamp(17px, 1.7vw, 20px) · 400 · 1.6 · max 36em</div></sc-if>
+            <div style="margin-top:10px;max-width:var(--measure-lead);font-size:var(--type-lead-size);line-height:1.6;color:var(--ink-700)">Ninety-five percent of customer interactions were happening by phone, and the phone was the slowest channel in the business.</div>
+          </div>
+          <div style="border-top:1px solid var(--line-400);padding:26px 0">
+            <sc-if value="{{ showSpecs }}" hint-placeholder-val="{{ true }}"><div style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">Body · 16px · 400 · 1.65 · max 34em</div></sc-if>
+            <div style="margin-top:10px;max-width:var(--measure-body);font-size:16px;line-height:1.65;color:var(--ink-700)">Copy is first person, past tense, and specific. It names the client, the role, the duration and the number. It does not sell. Headings are statements and they end with a period.</div>
+          </div>
+          <div style="border-top:1px solid var(--line-400);padding:26px 0">
+            <sc-if value="{{ showSpecs }}" hint-placeholder-val="{{ true }}"><div style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">List row 15px / 1.55 &nbsp;·&nbsp; Micro 13px / 1.6</div></sc-if>
+            <div style="margin-top:10px;max-width:var(--measure-row);font-size:15px;line-height:1.55;color:var(--ink-700)">Service blueprint across eleven touchpoints</div>
+            <div style="margin-top:6px;font-size:13px;line-height:1.6;color:var(--ink-500)">Eight weeks · four workshops · two regions</div>
+          </div>
+          <div style="border-top:1px solid var(--line-400);border-bottom:1px solid var(--line-400);padding:26px 0">
+            <sc-if value="{{ showSpecs }}" hint-placeholder-val="{{ true }}"><div style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">Figures · &minus;0.045em · 0.95 · tabular · size steps down by character count</div></sc-if>
+            <div style="margin-top:14px;display:flex;flex-wrap:wrap;align-items:baseline;gap:clamp(24px,4vw,56px);font-variant-numeric:tabular-nums;letter-spacing:-0.045em;line-height:0.95">
+              <span style="font-size:var(--type-figure-lg);font-weight:500">95%</span>
+              <span style="font-size:var(--type-figure-md);font-weight:500">11 touchpoints</span>
+              <span style="font-size:var(--type-figure-sm);font-weight:500">4.2 million calls</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="border-top:1px solid var(--line-400);padding:var(--gap-section-y) 0;display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+      <div style="font-size:13px;font-weight:700;color:var(--text-accent);font-variant-numeric:tabular-nums">03 Layout</div>
+      <div>
+        <h2 style="margin:0;max-width:var(--measure-heading);font-size:var(--type-section-size);font-weight:500;letter-spacing:-0.03em;line-height:1.1">A rail, then the content.</h2>
+        <p style="margin:22px 0 0;max-width:var(--measure-body);font-size:16px;line-height:1.65;color:var(--ink-700)">A 1220px container with fluid side padding. Every section is a two-column grid: the marker rail, then the content column. Sections are divided by a 1px rule on the top edge only — the page you are reading is the specimen.</p>
+
+        <div style="margin-top:var(--gap-heading-to-content);display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap);border-top:1px solid var(--line-400);padding-top:20px">
+          <div style="background:var(--paper-200);border:1px dashed var(--line-300);min-height:120px;padding:12px;font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">Rail<br />clamp(98px, 15vw, 170px)</div>
+          <div style="background:var(--paper-000);border:1px dashed var(--line-300);min-height:120px;padding:12px;font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">Content · minmax(0, 1fr)<br />gap clamp(16px, 4vw, 56px)</div>
+        </div>
+
+        <div style="margin-top:var(--gap-block);display:grid;gap:10px;max-width:var(--measure-row)">
+          <div style="display:grid;grid-template-columns:1fr;gap:6px">
+            <div style="height:10px;background:var(--paper-300);width:min(100%,26em)"></div>
+            <div style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">Heading measure · 26em</div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr;gap:6px">
+            <div style="height:10px;background:var(--paper-300);width:min(100%,34em)"></div>
+            <div style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">Body measure · 34em</div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr;gap:6px">
+            <div style="height:10px;background:var(--paper-300);width:min(100%,44em)"></div>
+            <div style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">List row measure · 44em</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="border-top:1px solid var(--line-400);padding:var(--gap-section-y) 0;display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+      <div style="font-size:13px;font-weight:700;color:var(--text-accent);font-variant-numeric:tabular-nums">04 Rhythm</div>
+      <div>
+        <h2 style="margin:0;max-width:var(--measure-heading);font-size:var(--type-section-size);font-weight:500;letter-spacing:-0.03em;line-height:1.1">Nine steps and a handful of fluid pairs.</h2>
+        <div style="margin-top:var(--gap-heading-to-content);display:flex;flex-wrap:wrap;align-items:flex-end;gap:18px">
+          <div style="display:grid;gap:8px;justify-items:center"><div style="width:4px;height:4px;background:var(--ink-900)"></div><div style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">4</div></div>
+          <div style="display:grid;gap:8px;justify-items:center"><div style="width:8px;height:8px;background:var(--ink-900)"></div><div style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">8</div></div>
+          <div style="display:grid;gap:8px;justify-items:center"><div style="width:12px;height:12px;background:var(--ink-900)"></div><div style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">12</div></div>
+          <div style="display:grid;gap:8px;justify-items:center"><div style="width:16px;height:16px;background:var(--ink-900)"></div><div style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">16</div></div>
+          <div style="display:grid;gap:8px;justify-items:center"><div style="width:20px;height:20px;background:var(--ink-900)"></div><div style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">20</div></div>
+          <div style="display:grid;gap:8px;justify-items:center"><div style="width:26px;height:26px;background:var(--ink-900)"></div><div style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">26</div></div>
+          <div style="display:grid;gap:8px;justify-items:center"><div style="width:32px;height:32px;background:var(--ink-900)"></div><div style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">32</div></div>
+          <div style="display:grid;gap:8px;justify-items:center"><div style="width:40px;height:40px;background:var(--ink-900)"></div><div style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">40</div></div>
+          <div style="display:grid;gap:8px;justify-items:center"><div style="width:56px;height:56px;background:var(--ink-900)"></div><div style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">56</div></div>
+        </div>
+
+        <div style="margin-top:var(--gap-block);max-width:var(--measure-row);display:grid">
+          <div style="border-top:1px solid var(--line-400);padding:14px 0;display:flex;justify-content:space-between;gap:24px;font-size:15px;line-height:1.55">
+            <span style="color:var(--ink-700)">Section padding, vertical</span><span style="color:var(--ink-400);font-size:13px;font-variant-numeric:tabular-nums">clamp(56px, 9vw, 110px)</span>
+          </div>
+          <div style="border-top:1px solid var(--line-400);padding:14px 0;display:flex;justify-content:space-between;gap:24px;font-size:15px;line-height:1.55">
+            <span style="color:var(--ink-700)">Heading to content</span><span style="color:var(--ink-400);font-size:13px;font-variant-numeric:tabular-nums">clamp(40px, 5vw, 64px)</span>
+          </div>
+          <div style="border-top:1px solid var(--line-400);padding:14px 0;display:flex;justify-content:space-between;gap:24px;font-size:15px;line-height:1.55">
+            <span style="color:var(--ink-700)">Heading to paragraph</span><span style="color:var(--ink-400);font-size:13px;font-variant-numeric:tabular-nums">22px</span>
+          </div>
+          <div style="border-top:1px solid var(--line-400);padding:14px 0;display:flex;justify-content:space-between;gap:24px;font-size:15px;line-height:1.55">
+            <span style="color:var(--ink-700)">Grid gap</span><span style="color:var(--ink-400);font-size:13px;font-variant-numeric:tabular-nums">clamp(24px, 3vw, 40px)</span>
+          </div>
+          <div style="border-top:1px solid var(--line-400);border-bottom:1px solid var(--line-400);padding:14px 0;display:flex;justify-content:space-between;gap:24px;font-size:15px;line-height:1.55">
+            <span style="color:var(--ink-700)">List row padding</span><span style="color:var(--ink-400);font-size:13px;font-variant-numeric:tabular-nums">14px · 16px titled</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="border-top:1px solid var(--line-400);padding:var(--gap-section-y) 0;display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+      <div style="font-size:13px;font-weight:700;color:var(--text-accent);font-variant-numeric:tabular-nums">05 Elevation</div>
+      <div>
+        <h2 style="margin:0;max-width:var(--measure-heading);font-size:var(--type-section-size);font-weight:500;letter-spacing:-0.03em;line-height:1.1">One shadow, or none.</h2>
+        <p style="margin:22px 0 0;max-width:var(--measure-body);font-size:16px;line-height:1.65;color:var(--ink-700)">A single three-layer shadow carries anything that should read as a physical card. Bento grids, featured blocks and artifact images hold it permanently; evidence tiles and deliverable cards earn it on hover. Rules, rows, tags, panels and the nav never have it.</p>
+        <div style="margin-top:var(--gap-heading-to-content);display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:var(--gap-grid)">
+          <div style="background:var(--paper-000);padding:var(--card-padding);box-shadow:var(--shadow-card);min-height:150px;display:grid;align-content:space-between">
+            <div style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Card</div>
+            <div style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">shadow-card · always on</div>
+          </div>
+          <div style="background:var(--paper-000);padding:var(--card-padding);border:1px solid var(--line-400);min-height:150px;display:grid;align-content:space-between;transition:box-shadow .2s ease,background .2s ease" style-hover="box-shadow:var(--shadow-card);background:var(--neutral-200)">
+            <div style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Evidence tile</div>
+            <div style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">earns the shadow on hover</div>
+          </div>
+          <div style="background:var(--paper-200);padding:var(--panel-padding);min-height:150px;display:grid;align-content:space-between">
+            <div style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Panel</div>
+            <div style="font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">flat, never elevated</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="border-top:1px solid var(--line-400);padding:var(--gap-section-y) 0;display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+      <div style="font-size:13px;font-weight:700;color:var(--text-accent);font-variant-numeric:tabular-nums">06 Interaction</div>
+      <div>
+        <h2 style="margin:0;max-width:var(--measure-heading);font-size:var(--type-section-size);font-weight:500;letter-spacing:-0.03em;line-height:1.1">Background moves. Text does not.</h2>
+        <p style="margin:22px 0 0;max-width:var(--measure-body);font-size:16px;line-height:1.65;color:var(--ink-700)">Hovering a clickable block tints it and nudges its arrow six pixels. Titles hold at ink. Images zoom on the inner element only. Press states are not styled, and there are no entrance animations.</p>
+        <div style="margin-top:var(--gap-heading-to-content);max-width:var(--measure-row)">
+          <div onMouseEnter="{{ enter0 }}" onMouseLeave="{{ leaveRow }}" style="border-top:1px solid var(--line-400);padding:16px 14px;display:flex;align-items:center;justify-content:space-between;gap:24px;cursor:pointer;background:var(--paper-000);transition:background .2s ease" style-hover="background:var(--neutral-200)">
+            <span style="font-size:15px;line-height:1.55;color:var(--ink-900)">Rethinking the claims journey &mdash; PSEG</span>
+            <span style="{{ arrow0 }}">&rarr;</span>
+          </div>
+          <div onMouseEnter="{{ enter1 }}" onMouseLeave="{{ leaveRow }}" style="border-top:1px solid var(--line-400);border-bottom:1px solid var(--line-400);padding:16px 14px;display:flex;align-items:center;justify-content:space-between;gap:24px;cursor:pointer;background:var(--paper-000);transition:background .2s ease" style-hover="background:var(--neutral-200)">
+            <span style="font-size:15px;line-height:1.55;color:var(--ink-900)">A service blueprint for the field &mdash; HomeServe</span>
+            <span style="{{ arrow1 }}">&rarr;</span>
+          </div>
+        </div>
+        <div style="margin-top:20px;font-size:11px;color:var(--ink-400);font-variant-numeric:tabular-nums">tint #ECECEC over .2s ease · arrow translateX(6px) over .22s cubic-bezier(.2, .7, .3, 1)</div>
+      </div>
+    </section>
+
+    <section style="border-top:1px solid var(--line-400);padding:var(--gap-section-y) 0;display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+      <div style="font-size:13px;font-weight:700;color:var(--text-accent);font-variant-numeric:tabular-nums">07 Components</div>
+      <div>
+        <h2 style="margin:0;max-width:var(--measure-heading);font-size:var(--type-section-size);font-weight:500;letter-spacing:-0.03em;line-height:1.1">Every part is lifted from a shipping page.</h2>
+
+        <div style="margin-top:var(--gap-heading-to-content);display:grid;gap:var(--gap-block)">
+
+          <div>
+            <div style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Core</div>
+            <div style="margin-top:20px;display:flex;flex-wrap:wrap;align-items:center;gap:clamp(24px,4vw,56px)">
+              <span style="font-size:13px;font-weight:700;color:var(--text-accent);font-variant-numeric:tabular-nums">04 Decisions</span>
+              <span style="display:flex;gap:8px">
+                <span style="border:1px solid var(--line-400);border-radius:var(--radius-tag);padding:5px 10px;font-size:13px;color:var(--ink-700)">Service design</span>
+                <span style="border:1px solid var(--line-400);border-radius:var(--radius-tag);padding:5px 10px;font-size:13px;color:var(--ink-700)">Research</span>
+              </span>
+              <a href="#" style="font-size:15px;color:var(--accent-700);border-bottom:1px solid var(--accent-300);padding:2px 6px;transition:background .2s ease,color .2s ease,border-color .2s ease" style-hover="background:var(--neutral-200);color:var(--accent-800);border-bottom-color:var(--accent-800)">Read the case study</a>
+              <span style="display:inline-flex;align-items:center;gap:7px;font-size:13px;color:var(--ink-500)"><span style="width:7px;height:7px;border-radius:50%;background:var(--green-500);display:inline-block"></span>Available for work</span>
+            </div>
+          </div>
+
+          <div>
+            <div style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Lists</div>
+            <div style="margin-top:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--gap-grid);max-width:60em">
+              <div>
+                <div style="border-top:1px solid var(--line-400);padding:14px 0;display:flex;gap:12px;font-size:15px;line-height:1.55;color:var(--ink-700)"><span style="color:var(--text-accent)">&rarr;</span><span>Interviewed nineteen field technicians</span></div>
+                <div style="border-top:1px solid var(--line-400);padding:14px 0;display:flex;gap:12px;font-size:15px;line-height:1.55;color:var(--ink-700)"><span style="color:var(--text-accent)">&rarr;</span><span>Mapped the journey end to end</span></div>
+                <div style="border-top:1px solid var(--line-400);border-bottom:1px solid var(--line-400);padding:14px 0;display:flex;gap:12px;font-size:15px;line-height:1.55;color:var(--ink-700)"><span style="color:var(--text-accent)">&rarr;</span><span>Ran four decision workshops</span></div>
+              </div>
+              <div>
+                <div style="border-top:1px solid var(--line-400);padding:16px 0;display:flex;gap:12px"><span style="width:20px;flex:none;font-size:13px;font-weight:700;color:var(--text-accent);font-variant-numeric:tabular-nums">01</span><span><span style="display:block;font-size:15px;font-weight:600;letter-spacing:-0.01em">Frame the problem</span><span style="display:block;margin-top:4px;font-size:13px;line-height:1.6;color:var(--ink-500)">Two weeks, with the operations lead.</span></span></div>
+                <div style="border-top:1px solid var(--line-400);border-bottom:1px solid var(--line-400);padding:16px 0;display:flex;gap:12px"><span style="width:20px;flex:none;font-size:13px;font-weight:700;color:var(--text-accent);font-variant-numeric:tabular-nums">02</span><span><span style="display:block;font-size:15px;font-weight:600;letter-spacing:-0.01em">Test the blueprint</span><span style="display:block;margin-top:4px;font-size:13px;line-height:1.6;color:var(--ink-500)">Two regions, six weeks.</span></span></div>
+              </div>
+            </div>
+            <div style="margin-top:var(--gap-grid);display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:var(--gap-grid);max-width:60em">
+              <div><div style="font-size:13px;color:var(--ink-400)">My role</div><div style="margin-top:6px;font-size:15px;line-height:1.55;color:var(--ink-900)">Lead service designer</div></div>
+              <div><div style="font-size:13px;color:var(--ink-400)">Duration</div><div style="margin-top:6px;font-size:15px;line-height:1.55;color:var(--ink-900)">Eight months</div></div>
+              <div><div style="font-size:13px;color:var(--ink-400)">Team makeup</div><div style="margin-top:6px;font-size:15px;line-height:1.55;color:var(--ink-900)">Four designers, two analysts</div></div>
+            </div>
+          </div>
+
+          <div>
+            <div style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Stat tiles</div>
+            <div style="margin-top:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));background:var(--paper-000);border-top:1px solid var(--line-400);border-left:1px solid var(--line-400);box-shadow:var(--shadow-card)">
+              <div style="padding:var(--tile-padding);min-height:var(--tile-min-height);display:grid;align-content:space-between;border-right:1px solid var(--line-400);border-bottom:1px solid var(--line-400)">
+                <div style="font-size:13px;color:var(--ink-400)">Interactions by phone</div>
+                <div><div style="font-size:var(--type-figure-lg);font-weight:500;letter-spacing:-0.045em;line-height:0.95;font-variant-numeric:tabular-nums">95%</div><div style="margin-top:12px;font-size:13px;line-height:1.6;color:var(--ink-500)">Before the programme started.</div></div>
+              </div>
+              <div style="padding:var(--tile-padding);min-height:var(--tile-min-height);display:grid;align-content:space-between;border-right:1px solid var(--line-400);border-bottom:1px solid var(--line-400)">
+                <div style="font-size:13px;color:var(--ink-400)">Touchpoints mapped</div>
+                <div><div style="font-size:var(--type-figure-md);font-weight:500;letter-spacing:-0.045em;line-height:0.95;font-variant-numeric:tabular-nums">11 stages</div><div style="margin-top:12px;font-size:13px;line-height:1.6;color:var(--ink-500)">Across two operating regions.</div></div>
+              </div>
+              <div style="padding:var(--tile-padding);min-height:var(--tile-min-height);display:grid;align-content:space-between;border-right:1px solid var(--line-400);border-bottom:1px solid var(--line-400)">
+                <div style="font-size:13px;color:var(--ink-400)">Handling time</div>
+                <div><div style="font-size:var(--type-figure-md);font-weight:500;letter-spacing:-0.045em;line-height:0.95;font-variant-numeric:tabular-nums">&minus;18%</div><div style="margin-top:12px;font-size:13px;line-height:1.6;color:var(--ink-500)">Measured six months after launch.</div></div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Bento tiles</div>
+            <div style="margin-top:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));background:var(--paper-000);border-top:1px solid var(--line-400);border-left:1px solid var(--line-400);box-shadow:var(--shadow-card)">
+              <div style="background:var(--paper-000);padding:var(--tile-padding);min-height:var(--bento-row-height);display:grid;align-content:space-between;transition:background .2s ease;border-right:1px solid var(--line-400);border-bottom:1px solid var(--line-400)" style-hover="background:var(--neutral-200)">
+                <img src="assets/plate-colors.svg" alt="" style="width:28px;height:28px;object-fit:contain" />
+                <div><div style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Experience strategy</div><div style="margin-top:6px;font-size:13px;line-height:1.6;color:var(--ink-500)">Where the service should go next.</div></div>
+              </div>
+              <div style="background:var(--paper-000);padding:var(--tile-padding);min-height:var(--bento-row-height);display:grid;align-content:space-between;transition:background .2s ease;border-right:1px solid var(--line-400);border-bottom:1px solid var(--line-400)" style-hover="background:var(--neutral-200)">
+                <img src="assets/plate-code.svg" alt="" style="width:28px;height:28px;object-fit:contain" />
+                <div><div style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Service blueprints</div><div style="margin-top:6px;font-size:13px;line-height:1.6;color:var(--ink-500)">Front stage, back stage, systems.</div></div>
+              </div>
+              <div style="background:var(--paper-000);padding:var(--tile-padding);min-height:var(--bento-row-height);display:grid;align-content:space-between;transition:background .2s ease;border-right:1px solid var(--line-400);border-bottom:1px solid var(--line-400)" style-hover="background:var(--neutral-200)">
+                <img src="assets/plate-heart.svg" alt="" style="width:28px;height:28px;object-fit:contain" />
+                <div><div style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Research practice</div><div style="margin-top:6px;font-size:13px;line-height:1.6;color:var(--ink-500)">Interviews, diaries, field visits.</div></div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Panel and award callout</div>
+            <div style="margin-top:20px;display:grid;gap:var(--gap-grid);max-width:60em">
+              <div style="background:var(--paper-200);padding:var(--panel-padding)">
+                <div style="font-size:var(--type-phase-size);font-weight:500;letter-spacing:-0.025em;max-width:var(--measure-heading)">What we set out to do.</div>
+                <p style="margin:18px 0 0;max-width:var(--measure-body);font-size:16px;line-height:1.65;color:var(--ink-700)">Panels hold a single argument on a flat warm ground. They carry no shadow, no radius and no border.</p>
+              </div>
+              <div style="border-top:1px solid var(--line-400);border-bottom:1px solid var(--line-400);padding:var(--panel-padding) 0;display:flex;flex-wrap:wrap;align-items:center;gap:clamp(24px,4vw,40px)">
+                <div style="width:64px;height:64px;flex:none;border:1px dashed var(--line-300);display:grid;place-items:center;font-size:11px;color:var(--ink-400)">Badge</div>
+                <div style="min-width:0"><div style="font-size:17px;font-weight:600;letter-spacing:-0.015em">J.D. Power award, business electric</div><div style="margin-top:6px;font-size:15px;line-height:1.55;color:var(--ink-500)">East region, 2023. Badge art lives in assets.</div></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <sc-if value="{{ showVoice }}" hint-placeholder-val="{{ true }}">
+    <section style="border-top:1px solid var(--line-400);padding:var(--gap-section-y) 0;display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+      <div style="font-size:13px;font-weight:700;color:var(--text-accent);font-variant-numeric:tabular-nums">08 Voice</div>
+      <div>
+        <h2 style="margin:0;max-width:var(--measure-heading);font-size:var(--type-section-size);font-weight:500;letter-spacing:-0.03em;line-height:1.1">It names the number, not the feeling.</h2>
+        <div style="margin-top:var(--gap-heading-to-content);max-width:var(--measure-row)">
+          <div style="border-top:1px solid var(--line-400);padding:14px 0;display:flex;gap:12px;font-size:15px;line-height:1.55;color:var(--ink-700)"><span style="color:var(--text-accent)">&rarr;</span><span>First person for the author, &ldquo;we&rdquo; for the engagement team. Never &ldquo;you.&rdquo;</span></div>
+          <div style="border-top:1px solid var(--line-400);padding:14px 0;display:flex;gap:12px;font-size:15px;line-height:1.55;color:var(--ink-700)"><span style="color:var(--text-accent)">&rarr;</span><span>Sentence case everywhere &mdash; headings, labels, nav, buttons.</span></div>
+          <div style="border-top:1px solid var(--line-400);padding:14px 0;display:flex;gap:12px;font-size:15px;line-height:1.55;color:var(--ink-700)"><span style="color:var(--text-accent)">&rarr;</span><span>Headings are statements with a period. Labels are plain nouns.</span></div>
+          <div style="border-top:1px solid var(--line-400);padding:14px 0;display:flex;gap:12px;font-size:15px;line-height:1.55;color:var(--ink-700)"><span style="color:var(--text-accent)">&rarr;</span><span>Section markers are two digits and a noun: 01 Color, 04 Decisions.</span></div>
+          <div style="border-top:1px solid var(--line-400);border-bottom:1px solid var(--line-400);padding:14px 0;display:flex;gap:12px;font-size:15px;line-height:1.55;color:var(--ink-700)"><span style="color:var(--text-accent)">&rarr;</span><span>No emoji, no exclamation marks, no rhetorical questions.</span></div>
+        </div>
+        <div style="margin-top:var(--gap-block);max-width:var(--measure-lead);font-size:16px;line-height:1.65;color:var(--ink-500)">Case studies always run in the same order: context, objectives, my role, approach, decisions, outcomes, results, recognition, learnings, deliverables, contact. Sections are omitted rather than renamed.</div>
+      </div>
+    </section>
+    </sc-if>
+
+  </div>
+
+  <footer style="border-top:1px solid var(--line-400);background:var(--paper-300)">
+    <div style="max-width:var(--container-max);margin:0 auto;padding:clamp(40px,6vw,72px) var(--container-pad);display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:24px">
+      <span style="font-size:16px;font-weight:600;letter-spacing:-0.01em">I&rsquo;m Bruce.</span>
+      <span style="font-size:13px;line-height:1.6;color:var(--ink-500)">Design system specimen. Standerd, with Archivo as the webfont fallback.</span>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showSpecs&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Specimen&quot;},&quot;showVoice&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Specimen&quot;}}">
+class Component extends DCLogic {
+  state = { hover: null };
+  arrow(i) {
+    return {
+      color: 'var(--text-accent)',
+      fontSize: '15px',
+      display: 'inline-block',
+      transition: 'transform .22s cubic-bezier(.2,.7,.3,1)',
+      transform: this.state.hover === i ? 'translateX(6px)' : 'none'
+    };
+  }
+  renderVals() {
+    return {
+      showSpecs: this.props.showSpecs ?? true,
+      showVoice: this.props.showVoice ?? true,
+      enter0: () => this.setState({ hover: 0 }),
+      enter1: () => this.setState({ hover: 1 }),
+      leaveRow: () => this.setState({ hover: null }),
+      arrow0: this.arrow(0),
+      arrow1: this.arrow(1)
+    };
+  }
+}
+</script>
+</body>
+</html>

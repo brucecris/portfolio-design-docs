@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="design-system/styles.css" />
+<script src="./image-slot.js"></script>
+<style>
+body{overflow-x:clip;}
+</style>
+</helmet>
+
+<div style="font-family:var(--font-sans);color:var(--ink-900);background:var(--surface-page);-webkit-font-smoothing:antialiased">
+
+  <header data-screen-label="About" style="position:sticky;top:0;z-index:60;background:var(--surface-header);border-bottom:1px solid var(--border-rule)">
+    <div style="max-width:var(--container-max);margin:0 auto;padding:var(--header-pad-y) var(--container-pad);display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px">
+      <a href="Home.dc.html" style="font-size:16px;font-weight:600;letter-spacing:-0.01em;color:var(--ink-900)">Bruce Criscuolo</a>
+      <nav style="display:flex;flex-wrap:wrap;align-items:baseline;gap:clamp(12px,1.8vw,26px);font-size:13px;font-weight:500;letter-spacing:0.01em">
+        <a class="ds-navlink" href="Work.dc.html">Work</a>
+        <a class="ds-navlink" href="About.dc.html" aria-current="page">About</a>
+        <a class="ds-navlink" href="Resume.dc.html">Resume</a>
+        <a class="ds-navlink" href="Contact.dc.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div style="max-width:var(--container-max);margin:0 auto;padding:0 var(--container-pad)">
+
+    <section style="padding:var(--gap-section-y) 0 var(--gap-block);display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+      <div style="font-size:var(--type-marker-size);font-weight:var(--type-marker-weight);color:var(--text-accent);line-height:var(--type-marker-leading)"><span style="font-weight:400">01</span><br />About</div>
+      <div>
+        <h1 style="margin:0;max-width:var(--measure-heading);font-size:var(--type-title-size);font-weight:500;letter-spacing:-0.038em;line-height:1.03;text-wrap:pretty">I make complex things understandable.</h1>
+        <p style="margin:var(--gap-heading-to-para) 0 0;max-width:var(--measure-lead);font-size:var(--type-lead-size);line-height:1.6;color:var(--ink-700);text-wrap:pretty">I have spent my career helping people see complicated things clearly enough to do something about them.</p>
+        <p style="margin:22px 0 0;max-width:var(--measure-body);font-size:16px;line-height:1.65;color:var(--ink-700);text-wrap:pretty">Sometimes that means interviewing customers in the field. Sometimes it means aligning executives around a service model, untangling a product ecosystem, building a design team, or making the prototype myself. The medium changes. The job is still understanding.</p>
+
+        <div style="margin-top:var(--gap-heading-to-content);display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--gap-grid);align-items:start">
+          <div style="height:clamp(280px,34vw,440px);box-shadow:var(--shadow-card)">
+            <image-slot id="about-portrait" shape="rect" fit="cover" placeholder="Portrait or working photograph"></image-slot>
+          </div>
+          <div style="background:var(--surface-panel);padding:var(--panel-padding)">
+            <div style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Where I am now</div>
+            <p style="margin:18px 0 0;font-size:15px;line-height:1.6;color:var(--ink-700);text-wrap:pretty">Principal Experience Designer, design leader, sensemaker. Twenty-five years across strategy, research, product, service design, and AI. Still hands-on.</p>
+            <div style="margin-top:24px;display:flex;flex-wrap:wrap;gap:10px 22px;font-size:13px;color:var(--ink-500);font-variant-numeric:tabular-nums">
+              <span>25+ years</span>
+              <span>51 brands</span>
+              <span>1,000+ interviews</span>
+              <span>14 industries</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="border-top:1px solid var(--border-rule);padding:var(--gap-section-y) 0;display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+      <div style="font-size:var(--type-marker-size);font-weight:var(--type-marker-weight);color:var(--text-accent);line-height:var(--type-marker-leading)"><span style="font-weight:400">02</span><br />Career arc</div>
+      <div>
+        <h2 style="margin:0;max-width:var(--measure-heading);font-size:var(--type-section-size);font-weight:500;letter-spacing:-0.03em;line-height:1.1;text-wrap:pretty">From hands-on interaction design to enterprise leadership and founder responsibility.</h2>
+        <p style="margin:var(--gap-heading-to-para) 0 0;max-width:var(--measure-body);font-size:16px;line-height:1.65;color:var(--ink-700);text-wrap:pretty">One paragraph connecting the stages: the work got larger, the accountability got more direct, and the craft never left.</p>
+
+        <div style="margin-top:var(--gap-heading-to-content);overflow:hidden"><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:0;margin:0 -1px -1px 0;">
+          <div style="padding:var(--tile-padding);box-shadow:inset -1px 0 0 var(--border-rule),inset 0 -1px 0 var(--border-rule)">
+            <div style="font-size:13px;font-weight:700;color:var(--text-accent);line-height:1.6;font-variant-numeric:tabular-nums">Stage 01</div>
+            <div style="margin-top:10px;font-size:clamp(16px,1.6vw,19px);font-weight:500;letter-spacing:-0.02em;line-height:1.25;text-wrap:pretty">Interaction design</div>
+            <p style="margin:12px 0 0;font-size:15px;line-height:1.55;color:var(--ink-700);text-wrap:pretty">Learning the craft by making the thing.</p>
+          </div>
+          <div style="padding:var(--tile-padding);box-shadow:inset -1px 0 0 var(--border-rule),inset 0 -1px 0 var(--border-rule)">
+            <div style="font-size:13px;font-weight:700;color:var(--text-accent);line-height:1.6;font-variant-numeric:tabular-nums">Stage 02</div>
+            <div style="margin-top:10px;font-size:clamp(16px,1.6vw,19px);font-weight:500;letter-spacing:-0.02em;line-height:1.25;text-wrap:pretty">Research and strategy</div>
+            <p style="margin:12px 0 0;font-size:15px;line-height:1.55;color:var(--ink-700);text-wrap:pretty">Placeholder line on what changed at this stage.</p>
+          </div>
+          <div style="padding:var(--tile-padding);box-shadow:inset -1px 0 0 var(--border-rule),inset 0 -1px 0 var(--border-rule)">
+            <div style="font-size:13px;font-weight:700;color:var(--text-accent);line-height:1.6;font-variant-numeric:tabular-nums">Stage 03</div>
+            <div style="margin-top:10px;font-size:clamp(16px,1.6vw,19px);font-weight:500;letter-spacing:-0.02em;line-height:1.25;text-wrap:pretty">Enterprise leadership</div>
+            <p style="margin:12px 0 0;font-size:15px;line-height:1.55;color:var(--ink-700);text-wrap:pretty">Placeholder line on scale and accountability.</p>
+          </div>
+          <div style="padding:var(--tile-padding);box-shadow:inset -1px 0 0 var(--border-rule),inset 0 -1px 0 var(--border-rule)">
+            <div style="font-size:13px;font-weight:700;color:var(--text-accent);line-height:1.6;font-variant-numeric:tabular-nums">Stage 04</div>
+            <div style="margin-top:10px;font-size:clamp(16px,1.6vw,19px);font-weight:500;letter-spacing:-0.02em;line-height:1.25;text-wrap:pretty">Founder</div>
+            <p style="margin:12px 0 0;font-size:15px;line-height:1.55;color:var(--ink-700);text-wrap:pretty">Owning the consequence of every product decision.</p>
+          </div>
+        </div></div>
+      </div>
+    </section>
+
+    <section style="border-top:1px solid var(--border-rule);padding:var(--gap-section-y) 0;display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+      <div style="font-size:var(--type-marker-size);font-weight:var(--type-marker-weight);color:var(--text-accent);line-height:var(--type-marker-leading)"><span style="font-weight:400">03</span><br />Operating principles</div>
+      <div>
+        <h2 style="margin:0;max-width:var(--measure-heading);font-size:var(--type-section-size);font-weight:500;letter-spacing:-0.03em;line-height:1.1;text-wrap:pretty">The standards I use to lead and make decisions.</h2>
+        <div style="margin-top:var(--gap-heading-to-content);max-width:var(--measure-row);overflow:hidden">
+          <div style="margin-bottom:-1px">
+            <div style="display:grid;grid-template-columns:clamp(34px,4vw,52px) minmax(0,1fr);gap:clamp(12px,2vw,24px);align-items:baseline;padding:22px 0;border-bottom:1px solid var(--border-rule)">
+              <span style="font-size:13px;font-weight:700;color:var(--text-accent);font-variant-numeric:tabular-nums">01</span>
+              <span style="font-size:clamp(17px,1.8vw,21px);font-weight:500;letter-spacing:-0.02em;line-height:1.3;text-wrap:pretty">Understand before producing.</span>
+            </div>
+            <div style="display:grid;grid-template-columns:clamp(34px,4vw,52px) minmax(0,1fr);gap:clamp(12px,2vw,24px);align-items:baseline;padding:22px 0;border-bottom:1px solid var(--border-rule)">
+              <span style="font-size:13px;font-weight:700;color:var(--text-accent);font-variant-numeric:tabular-nums">02</span>
+              <span style="font-size:clamp(17px,1.8vw,21px);font-weight:500;letter-spacing:-0.02em;line-height:1.3;text-wrap:pretty">Use evidence to challenge certainty.</span>
+            </div>
+            <div style="display:grid;grid-template-columns:clamp(34px,4vw,52px) minmax(0,1fr);gap:clamp(12px,2vw,24px);align-items:baseline;padding:22px 0;border-bottom:1px solid var(--border-rule)">
+              <span style="font-size:13px;font-weight:700;color:var(--text-accent);font-variant-numeric:tabular-nums">03</span>
+              <span style="font-size:clamp(17px,1.8vw,21px);font-weight:500;letter-spacing:-0.02em;line-height:1.3;text-wrap:pretty">Stay close enough to the craft to keep strategy honest.</span>
+            </div>
+            <div style="display:grid;grid-template-columns:clamp(34px,4vw,52px) minmax(0,1fr);gap:clamp(12px,2vw,24px);align-items:baseline;padding:22px 0;border-bottom:1px solid var(--border-rule)">
+              <span style="font-size:13px;font-weight:700;color:var(--text-accent);font-variant-numeric:tabular-nums">04</span>
+              <span style="font-size:clamp(17px,1.8vw,21px);font-weight:500;letter-spacing:-0.02em;line-height:1.3;text-wrap:pretty">Make leadership increase the capability of the team.</span>
+            </div>
+            <div style="display:grid;grid-template-columns:clamp(34px,4vw,52px) minmax(0,1fr);gap:clamp(12px,2vw,24px);align-items:baseline;padding:22px 0;border-bottom:1px solid var(--border-rule)">
+              <span style="font-size:13px;font-weight:700;color:var(--text-accent);font-variant-numeric:tabular-nums">05</span>
+              <span style="font-size:clamp(17px,1.8vw,21px);font-weight:500;letter-spacing:-0.02em;line-height:1.3;text-wrap:pretty">Use AI to extend judgment and leverage while keeping responsibility visible.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="border-top:1px solid var(--border-rule);padding:var(--gap-section-y) 0;display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+      <div style="font-size:var(--type-marker-size);font-weight:var(--type-marker-weight);color:var(--text-accent);line-height:var(--type-marker-leading)"><span style="font-weight:400">04</span><br />Leadership</div>
+      <div>
+        <h2 style="margin:0;max-width:var(--measure-heading);font-size:var(--type-section-size);font-weight:500;letter-spacing:-0.03em;line-height:1.1;text-wrap:pretty">Clarity, better decisions, and a team that can do more than it could before.</h2>
+        <p style="margin:var(--gap-heading-to-para) 0 0;max-width:var(--measure-body);font-size:16px;line-height:1.65;color:var(--ink-700);text-wrap:pretty">One or two paragraphs on how I lead. Name the mechanism, not the value: what I actually do in a room to raise the quality of a decision.</p>
+
+        <div style="margin-top:var(--gap-heading-to-content);display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--gap-grid)">
+          <div style="background:var(--surface-panel);padding:var(--panel-padding)">
+            <div style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Creating clarity</div>
+            <p style="margin:16px 0 0;font-size:15px;line-height:1.6;color:var(--ink-700);text-wrap:pretty">One short paragraph with a concrete example.</p>
+          </div>
+          <div style="background:var(--surface-panel);padding:var(--panel-padding)">
+            <div style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Raising decision quality</div>
+            <p style="margin:16px 0 0;font-size:15px;line-height:1.6;color:var(--ink-700);text-wrap:pretty">One short paragraph with a concrete example.</p>
+          </div>
+          <div style="background:var(--surface-panel);padding:var(--panel-padding)">
+            <div style="font-size:17px;font-weight:600;letter-spacing:-0.015em">Building capability</div>
+            <p style="margin:16px 0 0;font-size:15px;line-height:1.6;color:var(--ink-700);text-wrap:pretty">One short paragraph with a concrete example.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="border-top:1px solid var(--border-rule);padding:var(--gap-section-y) 0;display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+      <div style="font-size:var(--type-marker-size);font-weight:var(--type-marker-weight);color:var(--text-accent);line-height:var(--type-marker-leading)"><span style="font-weight:400">05</span><br />Current edge</div>
+      <div>
+        <h2 style="margin:0;max-width:var(--measure-heading);font-size:var(--type-section-size);font-weight:500;letter-spacing:-0.03em;line-height:1.1;text-wrap:pretty">AI sits inside an established practice of research, prototyping, and judgment.</h2>
+        <p style="margin:var(--gap-heading-to-para) 0 0;max-width:var(--measure-body);font-size:16px;line-height:1.65;color:var(--ink-700);text-wrap:pretty">One or two paragraphs on how I actually use it and where I keep a person accountable. Responsible adoption is a design decision, not a policy statement.</p>
+        <div style="margin-top:var(--gap-heading-to-content);max-width:var(--measure-row);overflow:hidden">
+          <div style="margin-bottom:-1px">
+            <div style="display:grid;grid-template-columns:20px minmax(0,1fr);gap:12px;align-items:start;padding:14px 0;border-bottom:1px solid var(--border-rule);font-size:15px;line-height:1.55;color:var(--ink-700)"><span style="color:var(--text-accent)">&rarr;</span><span>Where it speeds up synthesis without deciding anything.</span></div>
+            <div style="display:grid;grid-template-columns:20px minmax(0,1fr);gap:12px;align-items:start;padding:14px 0;border-bottom:1px solid var(--border-rule);font-size:15px;line-height:1.55;color:var(--ink-700)"><span style="color:var(--text-accent)">&rarr;</span><span>Where it lets me prototype an idea before asking for budget.</span></div>
+            <div style="display:grid;grid-template-columns:20px minmax(0,1fr);gap:12px;align-items:start;padding:14px 0;border-bottom:1px solid var(--border-rule);font-size:15px;line-height:1.55;color:var(--ink-700)"><span style="color:var(--text-accent)">&rarr;</span><span>Where responsibility stays with a named person.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="border-top:1px solid var(--border-rule);padding:var(--gap-section-y) 0;display:grid;grid-template-columns:var(--rail-width) minmax(0,1fr);gap:var(--rail-gap)">
+      <div style="font-size:var(--type-marker-size);font-weight:var(--type-marker-weight);color:var(--text-accent);line-height:var(--type-marker-leading)"><span style="font-weight:400">06</span><br />Next</div>
+      <div>
+        <a class="ds-row" href="Work.dc.html" style="color:var(--ink-900);display:grid;grid-template-columns:minmax(0,1fr) 28px;gap:clamp(14px,2.4vw,32px);align-items:center;padding:var(--card-padding) clamp(10px,1.4vw,16px);border-top:1px solid var(--border-rule);border-bottom:1px solid var(--border-rule)">
+          <span style="min-width:0">
+            <span style="display:block;font-size:13px;font-weight:500;letter-spacing:0.02em;color:var(--ink-500)">Next &middot; Work</span>
+            <span style="display:block;margin-top:8px;font-size:clamp(18px,2.1vw,26px);font-weight:500;letter-spacing:-0.025em;line-height:1.2;text-wrap:pretty">Three stories that show how this works in practice</span>
+          </span>
+          <span class="ds-row__arrow">&rarr;</span>
+        </a>
+        <div style="margin-top:var(--gap-block);display:flex;flex-wrap:wrap;align-items:baseline;gap:clamp(20px,3vw,32px)">
+          <a class="ds-link" href="Contact.dc.html" style="font-size:var(--type-cta-size);font-weight:var(--type-cta-weight);letter-spacing:var(--type-cta-tracking)">Start a conversation</a>
+          <a class="ds-link ds-link--secondary" href="Resume.dc.html" style="font-size:15px;font-weight:500">Read my resume</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer style="border-top:1px solid var(--border-rule)">
+    <div style="max-width:var(--container-max);margin:0 auto;padding:clamp(32px,5vw,56px) var(--container-pad);display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:var(--gap-grid);align-items:baseline">
+      <span style="font-size:13px;font-weight:500">Bruce Criscuolo</span>
+      <a class="ds-link ds-link--secondary" href="mailto:" style="font-size:13px;justify-self:start">email@domain.com</a>
+      <a class="ds-link ds-link--secondary" href="#" style="font-size:13px;justify-self:start">LinkedIn</a>
+      <span style="font-size:13px;color:var(--ink-500)">City, region</span>
+      <span style="font-size:13px;color:var(--ink-500)">Open to principal design and design leadership conversations.</span>
+    </div>
+  </footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{}"></script>
+</body>
+</html>
